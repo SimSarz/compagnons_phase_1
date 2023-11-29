@@ -1,0 +1,268 @@
+/*BOUTON DE LA NAV PRINCIPALE*/
+
+
+
+
+/*BOUTON CALL TO ACTION*/
+/*la classe .btn-cta doit être utilisés avec une 2e classe parmis:
+.white2blue
+.black2blue
+.white2pink
+.black2pink
+.white2black
+.black2white
+.alpha2pink*/
+
+.btn-cta{
+    width: 280px;
+    height: fit-content;
+    padding: 24px 40px;
+    box-shadow: var(--shadow-btn-cta);
+    transition: 500ms;
+    border: none;
+}
+
+.btn-cta:hover{
+    cursor: pointer;
+}
+
+.btn-cta:hover, .btn-cta:focus{
+    transition: 300ms;
+}
+
+.btn-cta:active{
+    padding: 20px 30px;
+    margin: 4px 10px;
+    font-size: 14px;
+    box-shadow: none;
+    transition: 500ms;
+}
+
+/*V1 blanc, hover bleu*/
+
+.white2blue{
+    background-color: white;
+    color: black;
+}
+
+.white2blue > a{
+    color: black
+}
+
+.white2blue:hover, .white2blue:focus{
+    background-color: var(--festival);
+    color: white;
+}
+
+.white2blue > a:hover, .white2blue > a:focus{
+    color: white;
+}
+
+.white2blue:active{
+    background-color: var(--fest-hover);
+}
+
+.white2blue > a:active{
+    font-size: 14px;
+}
+
+/*V2 noir, hover bleu*/
+
+.black2blue{
+    background-color: black;
+    color: white;
+}
+
+.black2blue > a{
+    color: white
+}
+
+.black2blue:hover, .black2blue:focus{
+    background-color: var(--festival);
+    color: white;
+}
+
+.black2blue> a:hover, .black2blue > a:focus{
+    color: white;
+}
+
+.black2blue:active{
+    background-color: var(--fest-hover);
+}
+
+.black2blue > a:active{
+    font-size: 14px;
+}
+
+/*V3 blanc. hover rose*/
+
+.white2pink{
+    background-color: white;
+    color: black;
+}
+
+.white2pink > a{
+    color: black
+}
+
+.white2pink:hover, .white2pink:focus{
+    background-color: var(--forge);
+    color: white;
+}
+
+.white2pink > a:hover, .white2pink > a:focus{
+    color: white;
+}
+
+.white2pink:active{
+    background-color: var(--forge-hover);
+}
+
+.white2pink > a:active{
+    font-size: 14px;
+}
+
+/*V4 noir, hover rose*/
+
+.black2pink{
+    background-color: black;
+    color: white;
+}
+
+.black2pink > a{
+    color: white;
+}
+
+.black2pink:hover, .black2pink:focus{
+    background-color: var(--forge);
+    color: white;
+}
+
+.black2pink > a:hover, .black2pink > a:focus{
+    color: white;
+}
+
+.black2pink:active{
+    background-color: var(--forge-hover);
+}
+
+.black2pink > a:active{
+    font-size: 14px;
+}
+
+/*V5 blanc, hover noir*/
+
+.white2black{
+    background-color: white;
+    color: black;
+}
+
+.white2black > a{
+    color: black
+}
+
+.white2black:hover, .white2black:focus{
+    background-color: black;
+    color: white;
+}
+
+.white2black > a:hover, .white2black > a:focus{
+    color: white;
+}
+
+.white2black > a:active{
+    font-size: 14px;
+}
+
+/*V6 noir, hover blanc*/
+
+.black2white{
+    background-color: black;
+    color: white;
+}
+
+.black2white > a{
+    color: white;
+}
+
+.black2white:hover, .black2white:focus{
+    background-color: white;
+    color: black;
+}
+
+.black2white > a:hover, .black2white> a:focus{
+    color: black;
+}
+
+.black2pink > a:active{
+    font-size: 14px;
+}
+
+/*V7 rose transparent, hover rose*/
+
+.alpha2pink{
+    background-color: var(--rose-alpha);
+    color: white;
+}
+
+.alpha2pink > a{
+    color: white;
+}
+
+.alpha2pink:hover, .alpha2pink:focus{
+    background-color: var(--forge);
+    color: white;
+}
+
+.alpha2pink > a:hover, .alpha2pink > a:focus{
+    color: white;
+}
+
+
+.alpha2pink > a:active{
+    font-size: 14px;
+}
+
+
+/*LIENS CLIQUABLES*/
+/*la class .btn-link doit être utilisée avec une des classes suivantes
+.bg-white
+.bg-black
+.no-bg-white
+.no-bg-black*/
+
+.btn-link{
+    padding: 12px;
+    text-decoration: none;
+}
+
+.btn-link:hover, .btn-link:focus{
+    text-decoration: solid;
+}
+
+.btn-link:active{
+    font-size: 16px;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.no-bg-white{
+    color: white;
+}
+.no-bg-white:hover, .no-bg-white:focus {
+    color: black;
+    background-color: white;
+}
+
+
+
+.no-bg-black{
+    color: black;
+}

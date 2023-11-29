@@ -1,0 +1,28 @@
+:root{
+
+/*COULEURS DE BASES*/
+
+    --compagnons: #7c2013;
+    --forge: #8A4A46;
+    --festival: #0D332E;
+    --vents: #196159;
+
+/*COULEURS HOVER*/
+    --comp-hover: #56170E;
+    --forge-hover: #6c3c39;
+    --fest-hover: #061614;
+    --vents-hover: #123C38;
+
+/*COULEURS AVEC TRANSPARENCE*/
+    --vert-alpha: rgba(13, 51, 46, 0.75);
+    --rose-alpha: rgba(164, 83, 83, 0.5);
+    --compagnons-alpha: rgba(124, 32, 19, 0.6);
+    --forge-alpha: rgba(138, 74, 70, 0.6);
+    --festival-alpha: rgba(13, 51, 46, 0.6);
+    --vents-alpha: rgba(25, 97, 89, 0.6);
+
+/*BOX-SHADOW*/
+    --shadow-btn-cta: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
+
+}
+

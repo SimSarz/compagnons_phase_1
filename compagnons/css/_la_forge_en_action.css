@@ -1,0 +1,99 @@
+.laforgeaction {
+    margin-top: 75px;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.laforgeaction_rdv > img {
+    display: block;
+    width: 100%;
+}
+
+.laforgeaction_rdv, .laforgeaction_spectacles, .laforgeaction_autres, .laforgeaction_autres2   {
+    margin-bottom: 60px;
+}
+
+.laforgeaction_spectacles > img {
+    display: block;
+    width: 100%;
+}
+
+.laforgeaction_autres > img {
+    display: block;
+    width: 100%;
+}
+
+.laforgeaction_autres2 > img {
+    display: block;
+    width: 100%;
+}
+
+.laforgeaction_autres2_text > ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.laforgeaction_autres2_text_list::before {
+    content: "•";
+    margin-right: 0.5em;
+}
+
+.laforgeaction_autres2_text_list_except::before {
+    list-style: none;
+    content: "";
+}
+
+
+@media screen and (min-width:1500px) {
+    .laforgeaction_rdv, .laforgeaction_spectacles {
+        margin-top: 80px;
+        display: flex;
+    }
+
+    .laforgeaction_rdv > img {
+        position: absolute;
+        width: 55%;
+        left: -60px;
+    }
+
+    .laforgeaction_rdv_text, .laforgeaction_autres_text {
+        margin-left: 580px;
+    }
+
+    .laforgeaction_rdv_text > h2 {
+        width: 430px;
+    }
+
+
+    .laforgeaction_spectacles > img {
+        position: absolute;
+        width: 55%;
+        right: -60px;
+    }
+
+    .laforgeaction_spectacles_text, .laforgeaction_autres2_text {
+        margin-right: 580px;
+    }
+
+    .laforgeaction_spectacles_text > h2 {
+        margin-top: 0;
+        width: 430px;
+    }
+
+    .laforgeaction_autres > img {
+        position: absolute;
+        width: 55%;
+        left: -60px;
+    }
+
+    .laforgeaction_autres_text > h2 {
+        width: 430px;
+    }
+
+    .laforgeaction_autres2 > img {
+        position: absolute;
+        width: 55%;
+        right: -60px;
+    }
+}

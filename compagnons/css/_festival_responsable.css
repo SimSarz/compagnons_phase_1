@@ -1,0 +1,79 @@
+.responsable_intro{
+    width: 90%;
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+
+.responsable_top_content,
+.responsable_bottom_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    position: relative;
+}
+
+.outdoor_photo{
+    width: 100%;
+}
+
+.saviez-vous_container{
+    background-color: var(--festival);
+    color: white;
+    padding: 30px;
+    display: none;
+}
+
+.responsable_conclusion{
+    width: 90%;
+}
+
+.responsable_conclusion p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media screen and (min-width:1500px){
+    .responsable_intro>p{
+        font-size: 18px;
+    }
+
+    .saviez-vous_container{
+        display: block;
+    }
+
+    .responsable_top_content img{
+        clip-path: polygon(29% 0, 78% 0, 78% 100%, 29% 100%);
+        position: absolute;
+        left: -850px;
+        top: 30px;
+        width: 150%;
+    }
+
+    .responsable_top_content{
+        width:60%;
+        margin-left: 400px;
+    }
+
+    .responsable_top_content_texts{
+        padding-left: 20px;
+    }
+
+    .responsable_bottom_content{
+        position: relative;
+        margin-top: 40px;
+        width: 90%;
+        display: block;
+    }
+
+    .saviez-vous_container{
+        float: right;
+        width: 50%;
+        margin-right: -150px;
+        margin-top: 30px;
+    }
+
+    .responsable_bottom_content_4{
+        width: 56%;
+    }
+}

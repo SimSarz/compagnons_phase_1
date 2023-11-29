@@ -1,0 +1,501 @@
+.accueil_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liens_filiere{
+    position: relative;
+    margin: 100px 0px;
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 760px;
+}
+
+.liens_filiere>a{
+    text-decoration: none;
+    color: white;
+}
+
+.filiere_banner_compagnons{
+    background-image: url("../images/filiere_banniere_compagnons.png");
+    background-size: cover;
+    width:1350px;
+    height: 219.65px;
+    clip-path: polygon(0 0, 100% 0, 98.7% 100%, 1.6% 100%);
+}
+
+.filiere_banner_forge{
+    background-image: url("../images/filiere_banniere_forge.png");
+    background-size: cover;
+    width:1350px;
+    height: 219.65px;
+    clip-path: polygon(0 0, 100% 0, 98.7% 100%, 1.6% 100%);
+    position: absolute;
+    top: 179.65px;
+    z-index: 2;
+}
+
+.filiere_banner_rdv{
+    background-image: url("../images/filiere_banniere_rdv.png");
+    background-size: cover;
+    width:1350px;
+    height: 219.65px;
+    clip-path: polygon(0 0, 100% 0, 98.7% 100%, 1.6% 100%);
+    position: absolute;
+    top: 359.3px;
+    z-index: 3;
+}
+
+.filiere_banner_vents{
+    background-image: url("../images/filiere_banniere_vents_de_parole.png");
+    background-size: cover;
+    width:1350px;
+    height: 280px;
+    clip-path: polygon(0 0, 100% 0, 98.7% 79%, 1.6% 79%);
+    position: absolute;
+    top: 538.95px;
+    z-index: 4;
+}
+
+.compagnons_filiere_filter{
+    background-color: var(--compagnons-alpha);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.forge_filiere_filter{
+    background-color: var(--forge-alpha);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.rdv_filiere_filter{
+    background-color: var(--festival-alpha);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.vents_filiere_filter{
+    background-color: var(--vents-alpha);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.filiere_banner_compagnons_titles_container{
+    margin-left: 110px;
+    margin-top: 60px;
+}
+
+.filiere_banner_forge_titles_container{
+    margin-left: 900px;
+    margin-top: 90px;
+}
+
+.filiere_banner_rdv_titles_container{
+    margin-left: 500px;
+    margin-top: 50px;
+    width: 30%;
+}
+
+.filiere_banner_vents_titles_container{
+    margin-left: 310px;
+    margin-top: 80px;
+    width: 40%;
+}
+
+.prior_title{
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.after_title{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-size: 16px;
+}
+
+.filiere_title{
+    margin: 0;
+    font-size: 28px;
+}
+
+/* --- Animations Bannieres filieres --- */
+
+.filiere_banner_compagnons_hover{
+    transform: rotate(-1deg) translate(0px, -29px);
+    transition: 200ms;
+}
+
+.filiere_banner_compagnons_out{
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: 200ms;
+}
+
+.filiere_banner_forge_hover{
+    transform: rotate(1deg) translate(0px, -29px);
+    transition: 200ms;
+}
+
+.filiere_banner_forge_out{
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: 200ms;
+}
+
+.filiere_banner_rdv_hover{
+    transform: rotate(-1deg) translate(0px, -29px);
+    transition: 200ms;
+}
+
+.filiere_banner_rdv_out{
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: 200ms;
+}
+
+.filiere_banner_vents_hover{
+    transform: rotate(1deg) translate(0px, -29px);
+    clip-path: polygon(0 0, 100% 0, 98.7% 85%, 1.6% 93%);
+    transition: 200ms;
+}
+
+.filiere_banner_vents_out{
+    transform: rotate(0deg) translate(0px, 0px);
+    clip-path: polygon(0 0, 100% 0, 98.7% 79%, 1.6% 79%);
+    transition: 200ms;
+}
+
+.compagnons_filiere_filter_hover{
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.compagnons_filiere_filter_out{
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.forge_filiere_filter_hover{
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.forge_filiere_filter_out{
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.rdv_filiere_filter_hover{
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.rdv_filiere_filter_out{
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.vents_filiere_filter_hover{
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.vents_filiere_filter_out{
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+/* ------------------------------------------------- */
+
+/* --- Bannieres liens ---*/
+
+.liens_baniere{
+    width: 100%;
+}
+
+.link_banner_compagnons{
+    background-color: var(--compagnons);
+    color: white;
+    text-decoration: none;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_banner_titles_container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link_banner_titles_container>.prior_title{
+    margin-top: 0;
+}
+
+.link_banner_forge{
+    background-color: var(--forge);
+    color: white;
+    text-decoration: none;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_banner_rdv{
+    background-color: var(--festival);
+    color: white;
+    text-decoration: none;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_banner_vents{
+    background-color: var(--vents);
+    color: white;
+    text-decoration: none;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accueil_section_video{
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+}
+
+.accueil_video_black_banner{
+    background-color: black;
+    color: white;
+    width: 90%;
+    padding: 15px;
+    text-align: right;
+}
+
+.accueil_video_black_banner>h4{
+    font-size: 18px;
+    margin: 0;
+}
+
+.accueil_video_black_banner>p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.images_container{
+    width: 90%;
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media screen  and (min-width: 600px){
+    .prior_title{
+        font-size: 20px;
+    }
+    
+    .after_title{
+        font-size: 16px;
+    }
+    
+    .filiere_title{
+        font-size: 32px;
+    }
+}
+
+@media screen  and (min-width: 1200px){
+    .accueil_section_video{
+        height: 500px;
+    }
+
+    .accueil_video_black_banner{
+        padding: 15px;
+        position: absolute;
+        top:-20px;
+        right: -20px;
+        z-index: 2;
+        transform: rotate(4deg);
+        text-align: right;
+    }
+
+    .accueil_video_container{
+        background-color: black;
+        width: fit-content;
+        height: fit-content;
+        padding: 12px;
+        position: absolute;
+        top:40px;
+        right: 0px;
+        text-align: right;
+    }
+
+    .video_accueil{
+        max-width: 600px;
+    }
+
+    .derniere_edition_imgs{
+        position: relative;
+    }
+}
+
+
+@media screen  and (min-width: 1400px){
+    .liens_filiere{
+        display: flex;
+    }
+
+    .prior_title{
+        font-size: 22px;
+    }
+    
+    .after_title{
+        font-size: 16px;
+    }
+    
+    .filiere_title{
+        font-size: 36px;
+    }
+
+    .liens_baniere{
+        display: none;
+    }
+
+    .accueil_video_black_banner{
+        width: 700px;
+        background-color: black;
+        color: white;
+        width: 480px;
+        padding: 15px;
+        position: absolute;
+        top:-20px;
+        right: -20px;
+        transform: rotate(4deg);
+        text-align: right;
+    }
+
+    .accueil_video_container>.accueil_video{
+        width: 50%;
+        align-self: flex-end;
+    }
+
+    .accueil_video_black_banner>h4{
+        font-size: 22px;
+    }
+    
+    .accueil_video_black_banner>p{
+        font-size: 18px;
+    }
+
+}
+
+/* WIDGET */
+.accueil_section_event {
+    display: flex;
+}
+
+.accueil_section_event_title {
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 0;
+    height: 48px;
+}
+
+.accueil_section_event_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accueil_section_event_bottom_link {
+    font-style: none;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+.section_event_bottom_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.section_event_bottom_link_btn {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.section_event_bottom_button:hover, .section_event_bottom_button:focus {
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+    outline: none;
+}
+
+.section_event_bottom_link_btn_plus {
+    display: flex;
+    font-size: 16px!important;
+    align-items: center;
+    color: white;
+}
+
+.section_event_bottom_link_btn_plus > span {
+    display: flex;
+    align-items: center;
+}
+
+.section_event_bottom_link_btn_plus:hover, .section_event_bottom_link_btn_plus:focus {
+    font-size: 15px!important;
+    outline: none;
+    border: 1px solid white;
+}
+
+.section_event_bottom_link_btn_plus:active {
+    font-size: 14px!important;
+}
+
+@media screen  and (min-width: 544px) {
+    .accueil_section_event {
+        justify-content: center;
+    }
+    .accueil_section_event_bottom {
+        justify-content: center;
+    }
+}
+
+@media screen  and (max-width: 900px) {
+    .prog_widget {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .accueil_section_event_title {
+        margin-left: 5px;
+    }
+
+    .accueil_section_event {
+        overflow-x: auto;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen  and (max-width: 1999px) {
+    .prog_widget {
+        background-color: white;
+    }
+}   

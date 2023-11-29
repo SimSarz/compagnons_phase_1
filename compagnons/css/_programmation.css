@@ -1,0 +1,336 @@
+
+
+
+/*------------------------ CONTAINER DE CARTES ------------------------*/
+.container_programmation_cardBox {
+    display: flex;
+    justify-content: center;
+}
+
+.programmation_cardBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+}
+
+.programmation_main_corr {
+    width: 100%;
+}
+
+.programmation {
+    width: 100%;
+}
+
+/*------------------------ CARTES ------------------------*/
+.eventCard {
+    font-family: 'Montserrat', sans-serif;
+    width: fit-content;
+    max-width: 170px; /* GROSSEUR DES CARTES ICI SEULEMENT */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+.eventCard_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.eventCard_infoBox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97.5%;
+    z-index: 1;
+}
+
+.eventCard_infoBox_date {
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    font-weight: 600;
+    padding-left: 5%;
+    transition: background-color 0.5s ease;
+}
+
+.eventCard_infoBox_date_date {
+    font-size: 1em;
+}
+
+.eventCard_infoBox_date_date, .eventCard_infoBox_date_day {
+    margin: 0;
+}
+
+.eventCard_infoBox_info {
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.eventCard_infoBox_info_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.eventCard_infoBox_info_container_placeNPrice {
+    background-color: rgba(0, 0, 0, 0.787);
+    font-weight: 550;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.eventCard_infoBox_info_container_placeNPrice >p , .eventCard_infoBox_info_container_desc >p {
+    margin: 0;
+}
+
+.eventCard_infoBox_info_container_desc {
+    width: 90%;
+    height: 100%;
+    max-height: 150px;
+    margin: auto;
+    overflow-y: auto;
+    display: none;
+    margin-top: 10px;
+    word-wrap: break-word;
+    padding-right: 12px;
+    padding-left: 12px ;
+}
+
+.eventCard_infoBox_info_buttonContainer {
+    background-color: rgba(0, 0, 0, 0.787);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5px;
+    height: 60px;
+}
+
+.eventCard_infoBox_info_button {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 10px;
+    background-color: white;
+    border: none;
+    margin-top: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+.eventCard_link {
+    text-decoration: none;
+}
+
+.eventCard_infoBox_info_button > .material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 250,
+        'GRAD' 200,
+        'opsz' 20
+}
+
+.eventCard_infoBox_info_button:hover {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+.eventCard_photoBox {
+    width: 170px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.eventCard_photoBox > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.eventCard_titleBox {
+    margin-top: 3px;
+    padding: 5px;
+    padding-left: 5%;
+    background-color: black;
+    color: white;
+    height: 48px;
+}
+
+.eventCard_titleBox > p {
+    margin: 0;
+}
+
+.eventCard_tagBox {
+    display: none;
+}
+
+/*------------------------ HIDDEN ------------------------*/
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 540px) {
+    .programmation_cardBox {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .programmation_cardBox {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .programmation_cardBox {
+        width: 780px;
+    }
+
+    /* CARTES */
+    .eventCard {
+        width: 250px;
+        max-width: 250px; /* GROSSEUR DES CARTES ICI SEULEMENT */
+    }
+
+    .eventCard_infoBox{
+        background-color: rgba(0, 0, 0, 0);
+        transition: background-color 0.3s ease;
+        height: 355px;
+    }
+
+    .eventCard_infoBox_info {
+        margin: 8px 0px;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .eventCard_infoBox_info_container {
+        display: block;
+    }
+
+    .eventCard_infoBox_info_container_placeNPrice {
+        background-color: rgba(0, 0, 0, 0);
+        font-weight: 550;
+    }    
+
+    .eventCard_infoBox_info_container_desc {
+        display: block;
+    }
+
+    .eventCard_infoBox_info_buttonContainer {
+        background-color: rgba(0, 0, 0, 0);
+        max-height: 35px;
+    }    
+
+    .eventCard_infoBox_info_button {
+        font-size: 20px;
+        width: 245px;
+    }
+
+    .eventCard_infoBox_info_button > .material-symbols-outlined {
+        font-variation-settings:
+            'FILL' 0,
+            'wght' 700,
+            'GRAD' 200,
+            'opsz' 48
+    }
+
+    .eventCard_infoBox_info_button:hover {
+        padding: 6px;
+        transition: padding 0.5s ease-in-out;
+    }
+
+    .eventCard_infoBox_info_button:active {
+        transition: font-size 0.2s ease-in-out;
+    }
+
+    .eventCard_infoBox_date_date {
+        font-size: 1.5em;
+    }
+
+    .eventCard_titleBox {
+        padding: 12px;
+        padding-left: 5%;
+        background-color: black;
+        color: white;
+    }
+
+    .eventCard_photoBox {
+        width: 250px;
+        height: 355px;
+        overflow: hidden;
+    }
+
+    .eventCard_photoBox > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .eventCard_infoBox_info_container_placeNPrice_lieu {
+        width: 230px;
+        padding-bottom: 10px;
+    }
+
+    .eventCard_titleBox {
+        height: fit-content;
+    }
+
+    .programmation {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .programmation_cardBox {
+        width: 1040px;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .programmation_cardBox {
+        width: 1040px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .programmation_main_corr {
+        padding: 0;
+    }
+
+    .eventCard {
+        height: 300px;
+    }
+
+    .eventCard_container {
+        height: 82%;
+    }
+
+    .eventCard_titleBox {
+        max-height: 38px;
+    }
+
+    .eventCard_infoBox {
+        height: 100%;
+    }
+}

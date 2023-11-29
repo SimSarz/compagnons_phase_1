@@ -1,0 +1,319 @@
+/*--STYLE DU HEADER - MOBILE*/
+.top-nav-text{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.main_nav_menu_link_btn_title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    width: fit-content;
+    text-align: left;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.main_nav_menu_link_btn_title2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    width: fit-content;
+    text-align: left;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.submenu-link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.submenu-items{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+/*-- STYLES GÉNÉRAUX - MOBILE--*/
+
+.h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.h2-cursive{
+    font-family: "Homemade Apple", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.h3{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.h3-cursive{
+    font-family: "Homemade Apple", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.h4{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.h4-underlined {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0 0 2px 0;
+}
+
+.card-title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.citation{
+    font-family: "Homemade Apple", sans-serif;
+    font-size: 32px;
+    line-height: 160px;
+    font-weight: normal;
+} 
+
+.textblock-plus{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27.4px;
+}
+
+.textblock{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.5px;
+}
+
+.textblock_sous-titre{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.5px;
+    text-decoration: underline 2px solid black;
+}
+
+.textblock-nomp {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.5px;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-link{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.btn-default{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    transition: 300ms;
+}
+
+.btn-default:active{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 300ms;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.link {
+    color: black;
+    font-size: 16px;
+}
+
+.link:hover, .link:focus {
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1200px){
+
+    /*--STYLE DU HEADER - DESKTOP*/
+    .top-nav-text{
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 1500px){
+     /*--STYLE DU HEADER - DESKTOP*/
+     .top-nav-text{
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .main_nav_menu_link_btn_title{
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .main_nav_menu_link_btn_title2{
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .submenu-link{
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .submenu-items{
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: white;
+    }
+
+    /*-- STYLES GÉNÉRAUX - DESKTOP--*/
+
+    .h1{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    
+    .h2{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+    }
+    
+    .h2-cursive{
+        font-family: "Homemade Apple", sans-serif;
+        font-size: 32px;
+        font-weight: normal;
+    }
+    
+    .h3{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+    }
+    
+    .h3-cursive{
+        font-family: "Homemade Apple", sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+    }
+    
+    .h4{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .card-title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .citation{
+        font-family: "Homemade Apple", sans-serif;
+        font-size: 32px;
+        line-height: 160px;
+        font-weight: normal;
+    } 
+    
+    .textblock-plus{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27.4px;
+    }
+    
+    .textblock{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23.5px;
+    }
+    
+    .textblock_sous-titre{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23.5px;
+        text-decoration: underline 2px solid black;
+    }
+    
+    .btn-link{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .btn-default{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        transition: 300ms;
+    }
+    .btn-default:active{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        transition: 300ms;
+    }
+
+}
+

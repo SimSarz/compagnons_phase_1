@@ -1,0 +1,788 @@
+/*   --- Global css --- */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.footer_nav_right_content_reseaux_footer_icons img{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer_nav_right_content_reseaux_footer_icons a:focus{
+    transition: 200ms;
+    color: var(--vent);
+    outline: none;
+    border: none;
+    background-color: none;
+}
+
+@font-face {
+    font-family: "Homemade Apple";
+    src: url(../fonts/homemadeapple-regular-webfont.woff2) format('woff2'),
+        url(../fonts/homemadeapple-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+        url(../montserrat-variablefont_wght-webfont.woff) format('woff');
+    }
+
+:root {
+    --rose: rgb(164, 83, 83);
+    --vent: rgb(25,97,89);
+    --rdv: rgb(13, 51, 46);
+    --vert-alpha: rgba(13, 51, 46, 0.75);
+    --rose-alpha: rgba(164, 83, 83, 0.5);
+    --compagnons: #7c2013;
+    --shadow-btn-cta: 0px 4px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+
+/* --- Bannière mission --- */
+.mission_banner{
+    background-color: var(--compagnons);
+    height: 320px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.mission_banner_img_container{
+    display: none;
+}
+
+.accueil_compagnons_banner>h2{
+    margin-top: 5px;
+}
+
+.mission_banner_title_container{
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --- Bannière informations pratiques --- */
+.infos_banner{
+    background-color: var(--rose);
+    height: 320px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.infos_banner_img_container{
+    display: none;
+}
+
+
+
+/* --- Bannière Rendez-vous des Grandes Geules --- */
+.rdv_banner{
+    background-color: var(--rdv);
+    height: 320px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.rdv_banner_img_container{
+    display: none;
+}
+
+
+/* --- Bannière vent de parole --- */
+.vdp_banner{
+    background-color: var(--vent);
+    height: 320px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+.vdp_banner_left_img_container, .vdp_banner_right_img_container{
+    display: none;
+}
+
+/* --- Bannière infolettre --- */
+.infolettre_banner{
+    height: 320px;
+    background-color: var(--rose);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infolettre_banner_content_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infolettre_banner h3{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 18px;
+}
+
+.infolettre_banner h4{
+    font-family: "Homemade Apple", sans-serif;
+    color: white;
+    font-size: 20px;
+    transform: rotate(-3deg);
+    margin: 0;
+}
+
+.infolettre_banner_content_container_left_content{
+    display: none;
+}
+
+.infolettre_banner_content_container_mid_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infolettre_banner_content_container_mid_content h4{
+    font-size: 16px;
+}
+
+.infolettre_banner_content_container_right_content{
+    display: none;
+}
+
+
+/* --- Classe de container de bouton --- */
+.btn_container{
+    width: 280px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* --- Bouton s'abonner --- */
+/*.sub_btn{
+    width: 250px;
+    height: 70px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-btn-cta);
+    margin-top: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.sub_btn:hover{
+    background-color: var(--vent);
+    color: white;
+    transition: 300ms;
+    
+}
+
+.sub_btn:active{
+    background-color: var(--rdv);
+    width: 280px;
+    height: 50px;
+    font-size: 16px;
+    transition: 150ms;
+    border-radius: 10px;
+}
+
+.sub_btn:focus{
+    background-color: var(--vent);
+    color: white;
+    outline: none;
+}
+
+
+/* --- Bannière festival responsable --- */
+.eco_banner{
+    height: 500px;
+    background-image: url(../images/eco_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eco_banner_container{
+    height: 90%;
+    width: 65%;
+    background-color: var(--rdv);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 20px 0px;
+}
+
+.eco_banner_container h3{
+    font-size: 18px;
+    margin: 0;
+}
+
+.eco_banner_container p{
+    font-size: 14px;
+}
+
+/*.eco_banner_container a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}*/
+
+/*.eco_banner_container a:hover{
+    background-color: black;
+    color: white;
+    transition: 150ms;
+}
+
+.eco_banner_container a:focus{
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+
+/* --- Navigation du footer --- */
+
+.footer_nav{
+    height: 350px;
+    background-image: url(../images/footer_nav_background.jpg);
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: var(--vert-alpha);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_nav li{
+    list-style: none;
+}
+
+.footer_nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer_nav a:hover{
+    color: white;
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+.footer_nav_left_content a:focus{
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    transition: 200ms;
+}
+
+.footer_nav ul{
+    padding: 0;
+}
+
+
+    
+.footer_nav_right_content_contact_infos_address_tel_email_container p{
+    font-size: 14px;
+}
+
+.footer_nav_left_content{
+    display: none;
+}
+
+.footer_nav_right_content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/*.footer_nav_right_content_contact_infos_contact_btn{
+    width: 250px;
+    height: 70px;
+    background-color: var(--rose-alpha);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 4px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.footer_nav_right_content_contact_infos_contact_btn:hover{
+    background-color: var(--rose);
+    transition: 300ms;
+}
+
+.footer_nav_right_content_contact_infos_contact_btn:active{
+    width: 280px;
+    height: 50px;
+    font-size: 16px;
+    transition: 150ms;
+    border-radius: 10px;
+}
+
+.footer_nav_right_content_contact_infos_contact_btn:focus{
+    background-color: var(--rose);
+    outline: none;
+}*/
+
+.footer_nav_right_content_contact_infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.footer_green_title{
+    background-color: var(--vert-alpha);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.footer_green_title h3, .footer_green_title h4{
+    margin: 0;
+}
+
+.footer_nav_left_content_left_column_compagnons_nav li, .footer_nav_left_content_left_column li, .footer_nav_left_content_right_column_impliquer_nav li, .footer_nav_left_content_right_column_aPropos_nav li{
+    margin: 20px 0px;
+}
+
+.footer_nav_single_link{
+    margin: 20px 0px;
+}
+
+.footer_nav_right_content_reseaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bi-facebook{
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.bi-instagram{
+    font-size: 50px;
+    margin-right: 5px;
+}
+
+
+.footer_nav_right_content_reseaux_footer_icons img{
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+.footer_nav_right_content_reseaux_footer_icons a:focus{
+    transition: 200ms;
+    color: var(--vent);
+    outline: none;
+    border: none;
+    background-color: none;
+}
+
+
+/* --- Media queries --- */
+
+
+@media screen and (min-width: 600px) {
+
+
+    /* --- Bannière infolettre --- */
+
+
+    .infolettre_banner_content_container_mid_content h4{
+        font-size: 30px;
+    }
+
+    .infolettre_banner h3{
+        font-size: 24px;
+    }
+
+
+    /* --- Bannière festival responsable --- */
+
+
+    .eco_banner_container{
+        height: 70%;
+    }
+
+    .eco_banner_container h3{
+        font-size: 28px;
+    }
+
+    .eco_banner_container p{
+        font-size: 16px;
+    }
+
+
+    /* --- Footer Nav --- */
+    .footer_nav{
+        padding: 50px 5vh;
+    }
+    
+}
+
+@media screen and (min-width: 1100px) {
+
+    /* --- Bannière mission --- */
+
+    .mission_banner{
+        font-weight: 700;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .mission_banner_title_container{
+        width: 50%;
+        margin-left: 120px;
+    }
+
+    .mission_banner_img_container{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .mission_banner img{
+        height: 300px;
+    }
+
+
+    /* --- Bannière informations pratiques --- */
+
+
+    .infos_banner{
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .infos_banner_title_container{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .infos_banner_img_container{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .infos_banner img{
+        height: 250px;
+    }
+
+
+    /* --- Bannière Rendez-vous des Grandes Geules --- */
+
+
+    .rdv_banner{
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .rdv_banner_title_container{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 100px;
+        padding-left: 15px;
+    }
+
+    .rdv_banner_img_container{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .rdv_banner img{
+        height: 250px;
+    }
+
+
+    /* --- Bannière vent de parole --- */
+
+
+    .vdp_banner{
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 32px;
+        padding: 0;
+    }
+
+    .vdp_banner_title_container{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .vdp_banner_left_img_container{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .vdp_banner_right_img_container{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .vdp_banner_left_img_container img{
+        height: 250px;
+    }
+
+    .vdp_banner_right_img_container img{
+        height: 100px;
+        padding-bottom: 50px;
+        margin-left: -50px;
+    }
+
+
+    /* --- Bannière infolettre --- */
+
+
+    .infolettre_banner h4{
+        font-size: 22px;
+    }
+
+    .infolettre_banner_content_container{
+        width: 95%;
+        max-width: 1440px;
+    }
+
+    .infolettre_banner_content_container img{
+        height: 250px;
+    }
+
+    .infolettre_banner_content_container_left_content{
+        margin-bottom: -105px;
+        width: 28%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infolettre_banner_content_container_mid_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .infolettre_banner_content_container_right_content{
+        margin-bottom: -70px;
+        width: 28%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* --- Bannière festival responsable --- */
+
+    .eco_banner_container p{
+        font-size: 20px;
+    }
+
+
+
+    /* --- Navigation du footer --- */
+    .footer_nav_left_content{
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
+    .footer_nav_left_content_right_column_fest_artists_nav_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_nav_left_content_right_column_fest_artists_nav_container a{
+        margin: 10px 0px;
+        font-weight: bold;
+    }
+
+    .footer_nav_right_content_reseaux{
+        align-items: flex-start;
+    }
+
+    .footer_nav_right_content_reseaux h3{
+        margin-left: 34px;
+    }
+
+    .footer_nav_right_content, .footer_nav_left_content_right_column{
+        padding-left: 30px;
+    }
+
+    .footer_nav {
+        justify-content: space-between;
+        height: 600px;
+    }
+    
+    .footer_nav_right_content_contact_infos{
+        align-items: flex-start;
+    }
+
+    .footer_nav_right_content_contact_infos_address_tel_email_container p{
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (min-width: 1250px) {
+    /* --- Bannière infolettre --- */
+
+    .infolettre_banner h4{
+        font-size: 28px;
+    }
+
+    .infolettre_banner_content_container img{
+        height: 300px;
+    }
+
+    .infolettre_banner_content_container_left_content{
+        margin-bottom: -63px;
+    }
+
+    .infolettre_banner_content_container_right_content{
+        margin-bottom: -35px;
+    }
+    
+}
+
+@media screen and (min-width: 1500px){
+    /* --- Bannière informations pratiques --- */
+
+
+    .infos_banner img{
+        height: 300px;
+    }
+
+
+    /* --- Bannière Rendez-vous des Grandes Geules --- */
+
+
+    .rdv_banner img{
+        height: 300px;
+    }
+
+
+    /* --- Bannière vent de parole --- */
+
+
+    .vdp_banner_left_img_container img{
+        height: 300px;
+    }
+
+    .rdv_banner_title_container{
+        padding-left: 200px;
+    }
+
+
+    /* --- Bannière infolettre --- */
+
+    .infolettre_banner h4{
+        font-size: 32px;
+    }
+
+
+    /* --- Bannière festival responsable --- */
+
+
+    /*.eco_banner_container p{
+        font-size: 20px;
+    }*/
+
+    .mission_banner_title_container{
+        margin-left: 220px;
+    }
+
+    .footer_nav_right_content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .footer_nav_right_content{
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 2500px){
+
+
+    /* --- Bannière festival responsable --- */
+
+
+    .eco_banner{
+        background-size: cover;
+    }
+}

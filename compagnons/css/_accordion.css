@@ -1,0 +1,118 @@
+/* STYLE GÉNÉRAL ACCORDÉON */
+.accordion {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 100%;
+    background-color: white;
+}
+
+
+
+/* BOUTON ACCORDÉON */
+.accordion_button {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 12px;
+}
+
+.accordion_button:hover,
+.accordion_button:focus{
+    padding-left: 22px;
+    background-color: rgba(0, 0, 0, 0.131);
+    transition:padding-left 0.3s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.accordion_button:focus{
+    outline: none;
+}
+
+.accordion_button > p {
+    margin: 0;
+}
+
+.accordion_button > span {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* DROPDOWN DE L'ACCORDÉON */
+.accordion_dropdown {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 40ms ease-in-out;
+    padding: 0;
+    opacity: 0;
+}
+
+.accordion_dropdown_content {
+    background-color: white;
+    padding: 14px;
+    color: black;
+}
+
+.accordion_dropdown_content > p {
+    margin: 0;
+}
+
+.accordion_dropdown.open {
+    max-height: 1500px; /* Hauteur maximale du dropdown ouvert */
+    transition: max-height 0.5s ease-in-out, opacity 0.3ms ease-in-out;
+    padding: 12px;
+    opacity: 1;
+    height: fit-content;
+}
+
+
+
+/* COULEURS DE FOND DE L'ACCORDÉON */
+.accordion_bg_compagnons,
+.accordion_bg_festival,
+.accordion_bg_vents,
+.accordion_bg_forge {
+    transition: background-color 0.3s ease-in-out; /* Ajoutez une transition pour la couleur de fond */
+}
+
+
+.accordion_bg_compagnons > .accordion_button,
+.accordion_bg_festival > .accordion_button,
+.accordion_bg_vents > .accordion_button,
+.accordion_bg_forge > .accordion_button {
+    color: white;
+}
+
+
+.accordion_bg_compagnons {
+    background-color: var(--compagnons);
+}
+
+.accordion_bg_festival {
+    background-color: var(--festival);
+}
+
+.accordion_bg_vents {
+    background-color: var(--vents);
+}
+
+.accordion_bg_forge {
+    background-color: var(--forge);
+}
+
+
+
+
+
+/* RENDRE L'ACCORDÉON QUI EN Z-INDEX ABSOLUTE */
+.accordion_shadow {
+    box-shadow: var(--shadow-btn-cta);
+}
+
+@media screen and (min-width: 1500px) {
+    .accordion_z {
+        max-width: 1000px;
+        position: absolute;
+        z-index: 3;
+    }   
+}

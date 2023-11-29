@@ -1,0 +1,37 @@
+/* 
+Theme Name: Compagnons
+Author: Une équipe en or
+Description: Theme personalisé
+Version: 1.0
+*/
+
+@import url(./css/_accordion.css);
+@import url(./css/_accueil.css);
+@import url(./css/_accueil_compagnons.css);
+@import url(./css/_accueil_rdv.css);
+@import url(./css/_artistes.css);
+@import url(./css/_button-styles.css);
+@import url(./css/_contact.css);
+@import url(./css/_equipe_compagnons.css);
+@import url(./css/_equipe_festival.css);
+@import url(./css/_faq.css);
+@import url(./css/_festival_responsable.css);
+@import url(./css/_fonts.css);
+@import url(./css/_footer.css);
+@import url(./css/_header.css);
+@import url(./css/_la_bavarde.css);
+@import url(./css/_la_forge_en_action.css);
+@import url(./css/_programmation_filters.css);
+@import url(./css/_main.css);
+@import url(./css/_nos_partenaires.css);
+@import url(./css/_contact.css);
+@import url(./css/_accueil_vdp.css);
+@import url(./css/_accueil_forge.css);
+@import url(./css/_notre_histoire.css);
+@import url(./css/_notre_mission.css);
+@import url(./css/_programmation.css);
+@import url(./css/_simpliquer-form.css);
+@import url(./css/_simpliquer.css);
+@import url(./css/_text-styles.css);
+@import url(./css/_variables.css);
+

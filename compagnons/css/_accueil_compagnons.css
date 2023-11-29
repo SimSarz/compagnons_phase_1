@@ -1,0 +1,152 @@
+.accueil_compagnons_main{
+    padding: 60px 0;
+}
+
+.accueil_compagnons_banner p{
+    margin: 0;
+    font-weight: 400;
+}
+
+.notre_equipe_container_text h3,
+.notre_mission_container_text h3,
+.notre_histoire_container_text h3,
+.nos_projets_container_text h3,
+.nos_partenaires_container_text h3{
+    text-decoration: underline var(--compagnons) 2px;
+}
+
+.h3_compagnons_hover{
+    background-color: var(--compagnons);
+    color: white;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+.notre_equipe_container,
+.notre_mission_container,
+.notre_histoire_container,
+.nos_projets_container,
+.nos_partenaires_container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.notre_equipe_container h3,
+.notre_mission_container h3,
+.notre_histoire_container h3,
+.nos_projets_container h3,
+.nos_partenaires_container h3{
+    margin: 0;
+    padding: 15px;
+}
+
+.notre_equipe_container p,
+.notre_mission_container p,
+.notre_histoire_container p,
+.nos_projets_container p,
+.nos_partenaires_container p{
+    text-align: center;
+}
+
+.notre_equipe_container_imgs,
+.notre_mission_container_imgs,
+.notre_histoire_container_imgs,
+.nos_projets_container_imgs,
+.nos_partenaires_container_imgs{
+    display: none;
+}
+
+.notre_equipe_container_text,
+.notre_mission_container_text,
+.notre_histoire_container_text,
+.nos_projets_container_text,
+.nos_partenaires_container_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1200px){
+    .accueil_compagnons_main{
+        padding: 25px 0;
+        margin: 75px 0;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .notre_equipe_container,
+    .notre_mission_container,
+    .notre_histoire_container,
+    .nos_projets_container,
+    .nos_partenaires_container{
+        justify-content: space-between;
+}
+    .notre_equipe_container_imgs,
+    .notre_mission_container_imgs,
+    .notre_histoire_container_imgs,
+    .nos_projets_container_imgs,
+    .nos_partenaires_container_imgs{
+        display: block;
+        position: relative;
+    }
+
+    .notre_equipe_container_text,
+    .notre_mission_container_text,
+    .notre_histoire_container_text,
+    .nos_projets_container_text,
+    .nos_partenaires_container_text{
+        align-items: flex-start;
+    }
+
+
+    .notre_equipe_container_text p,
+    .notre_mission_container_text p,
+    .notre_histoire_container_text p,
+    .nos_projets_container p,
+    .nos_partenaires_container p{
+        text-align: left;
+    }
+
+    .forgeron_compagnons,
+    .forgeron_compagnons_2{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .monsieur_compagnons{
+        width: 230px;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 55px;
+    }
+
+    .cheval_compagnons{
+        position: absolute;
+        z-index: 2;
+        top: 15px;
+        left: 45px;
+        width: 280px;
+    }
+
+    .marins_compagnons{
+        position: absolute;
+        z-index: 2;
+        top: -35px;
+        left: -25px;
+        width: 420px;
+    }
+
+    .notre_histoire_container_text{
+        padding-left: 20px;
+    }
+
+    .nos_projets_container_text{
+        padding-right: 20px;
+    }
+}

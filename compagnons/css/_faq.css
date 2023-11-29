@@ -1,0 +1,46 @@
+.faq {
+    width: 90%;
+}
+
+.faq_text {
+    text-align: center;
+}
+
+.accordion_dropdown_content ul>li{
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.accordion_dropdown_content ul{
+    padding-left: 15px;
+}
+
+.faq_link{
+    word-wrap: break-word;
+}
+
+.accordion_dropdown_content a{
+    color: black;
+}
+
+.accordion_dropdown_content a:hover{
+    color: white;
+    background-color: black;
+}
+
+.accordion_dropdown_content a:active{
+    color: white;
+    background-color: black;
+}
+
+@media screen and (min-width: 1500px){
+    .faq_main{
+        padding-top: 150px;
+        height: 1050px;
+        display: flex;
+    }
+
+    .faq_title_container{
+        padding-left: 140px;
+    }
+}

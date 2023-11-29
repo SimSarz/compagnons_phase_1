@@ -1,0 +1,40 @@
+main{
+    padding-top: 100px;
+}
+
+.main_content {
+    max-width: 100%;
+    background-color: white;
+    padding: 50px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        padding-top: 100px;
+        max-width: 100vw;
+    }
+
+    body {
+        background-image: url('../images/background_main.png');
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .main_content{
+        margin: 75px auto;
+        width: 90%;
+        padding: 50px 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main{
+        padding-top: 300px;
+    }
+
+    .main_content {
+        margin: 100px auto;
+        padding: 40px 80px;
+        max-width: 1200px;
+    }
+}

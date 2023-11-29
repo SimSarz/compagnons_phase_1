@@ -1,0 +1,181 @@
+body {
+    overflow-x: hidden;
+}
+
+.programmation_filters_searchBar {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.programmation_filters_search_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.programmation_filters_searchBar_input {
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.programmation_filters_button_icon, .programmation_filters_search_icon {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    min-width: 48px;
+    min-height: 48px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.filters-icon {
+    font-size: 2em;
+}
+
+.programmation_filters_searchBar_input:focus {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.programmation_filters_box {
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    transform: translate(100%);
+}
+
+.programmation_filters_box_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_top_title {
+    margin: 0;
+}
+
+.box_top_button {
+    border: none;
+    width: 58px;
+    height: 58px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+.box_top_icon {
+    font-size: 3em;
+}
+
+.programmation_filters {
+    display: flex;
+    align-items: center;
+}
+
+.filtersBoxOn {
+    display: block;
+    transform: translateX(0%);
+}
+
+.filtersBoxOff {
+    display: none;
+    transform: translateX(-100%);
+}
+
+
+/* Les inputs */
+.box_content_disciplineBox_input, .box_content_dateBox_input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 599px) {
+    .programmation_filters {
+        height: 48px;
+        padding: 10px 5px 0px 5px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+    }
+
+    .programmation_filters_box {
+        padding-top: 20px;
+        padding: 20px 10px 0px 10px;
+        position: fixed;
+        z-index: 2147483647;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Les inputs */
+    .box_content_disciplineBox_input, .box_content_dateBox_input, .box_content_checkBoxContainer_box  {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+    .programmation_filters {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .programmation_filters_button {
+        display: none;
+    }
+
+    .programmation_filters_box_top {
+        display: none;
+    }
+
+    .programmation_filters_searchBar_input {
+        width: 95%;
+    }
+
+    .box_content_dateBox_input, .box_content_disciplineBox, .programmation_filters_searchBar   {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.75);
+    }
+
+    .programmation_filters_box_content {
+        width: max-content;
+        display: flex;
+        height: 48px;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .box_content_disciplineBox {
+        order:2;
+    }
+
+    .box_content_checkBoxContainer {
+        display: flex;
+        order:0;
+    }
+
+    .programmation_filters_box, .box_content_checkBoxContainer, .box_content_disciplineBox, .box_content_disciplineBox_input, .box_content_dateBox, .box_content_dateBox_input, .programmation_filters_box_content   {
+        width: 100%;
+        height: 48px;
+    }
+
+    .box_content_checkBoxContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .box_content_checkBoxContainer_box {
+        display: flex;
+        align-items: center;
+        padding: 0 30px 0 30px;
+    }
+
+    .box_content_checkBoxContainer_box > label {
+        font-weight: 600;
+    }
+}

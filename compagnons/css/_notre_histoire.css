@@ -1,0 +1,63 @@
+.notre_histoire_text{
+    width: 90%;
+}
+
+.notre_histoire_text h3{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.notre_histoire_text>p{
+    margin-top: 8px;
+}
+
+.photo_lp_berube{
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    filter: grayscale(1);
+}
+
+.notre_histoire_last_p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1500px){
+    .notre_histoire_text h3{
+        font-size: 24px;
+    }
+
+    .notre_histoire_text>p{
+        font-size: 20px;
+    }
+
+    .notre_histoire_last_p{
+        flex-direction: row;
+        position: relative;
+        height: 450px;
+        align-items: flex-start;
+    }
+
+    .notre_histoire_last_p h3{
+        font-size: 24px;
+        width: 55%;
+    }
+
+    .notre_histoire_last_p p{
+        margin-bottom: 0;
+        width: 55%;
+        font-size: 20px;
+    }
+
+    
+    .photo_lp_berube{
+        width: 55%;
+        margin-bottom: 0px;
+        float: right;
+        position: absolute;
+        right: -160px;
+        top: 0px;
+    }
+}

@@ -1,0 +1,27 @@
+.text_intro,
+.notre_mission_text{
+    width: 90%;
+}
+
+.text_intro{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-top: 60px;
+    font-weight: 500;
+}
+
+.notre_mission_text{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1500px){
+    .text_intro{
+        font-size: 24px;
+    }
+
+    .notre_mission_text> p {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+}

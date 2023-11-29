@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Homemade Apple";
+    src: url(../fonts/homemadeapple-regular-webfont.woff2) format('woff2'),
+        url(../fonts/homemadeapple-regular-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/montserrat-variablefont_wght-webfont.woff2) format('woff2'),
+        url(../fonts/montserrat-variablefont_wght-webfont.woff) format('woff');
+    }
