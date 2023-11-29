@@ -135,7 +135,6 @@
             <div class="images_container">
                 <?php echo do_shortcode('[smartslider3 slider="2"]'); ?> 
             </div>
-            <a href="<?php bloginfo("template_url") ?>/galerie_media" class="galerie-link">Voir la galerie ➔</a>
         </div>
     </main>
 
