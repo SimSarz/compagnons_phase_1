@@ -9,14 +9,22 @@
 }
 
 
-.partenaires_or_logos,
-.partenaires_argent_logos,
-.partenaires_bronze_logos{
+.partenaires_or_logos{
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+}
+
+.partenaires_argent_logos,
+.partenaires_bronze_logos{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .partenaires_bronze_logos{
@@ -29,13 +37,13 @@
 }
 
 .logo_argent{
-    width: 200px;
-    height: 200px;
+    width: 125px;
+    height: 125px;
 }
 
 .logo_bronze{
-    width: 150px;
-    height: 150px;
+    width: 70px;
+    height: 70px;
 }
 
 .logo_or img,
@@ -44,8 +52,39 @@
     width: 100%;
 }
 
+.partenaires_or h3,
+.partenaires_argent h3,
+.partenaires_bronze h3{
+    text-align: center;
+}
 
+@media screen and (min-width: 380px){
+    .logo_bronze{
+        width: 75px;
+        height: 75px;
+    }
+}
 
+@media screen and (min-width: 410px){
+    .logo_bronze{
+        width: 80px;
+        height: 80px;
+        margin: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .logo_argent{
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .logo_argent{
+        margin: 0px 10px;
+    }
+}
 
 @media screen and (min-width: 750px){
     .partenaires_or_logos,
@@ -54,6 +93,16 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .logo_argent{
+        width: 160px;
+        height: 160px;
+    }
+
+    .logo_bronze{
+        width: 100px;
+        height: 100px;
     }
 
     .partenaires_bronze_logos{
@@ -113,6 +162,16 @@
 
     .partenaires_bronze_logos{
         width: 50%;
+    }
+
+    .logo_argent{
+        width: 180px;
+        height: 180px;
+    }
+
+    .logo_bronze{
+        width: 140px;
+        height: 140px;
     }
 }
 

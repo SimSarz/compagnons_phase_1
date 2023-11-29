@@ -64,24 +64,6 @@
                     </div>
                 </div>
             </div>
-            <div class="footer_nav_left_content_right_column">
-                <div class="footer_nav_left_content_right_column_fest_artists_nav_container">
-                    <a href="<?php bloginfo("template_url") ?>/lieux_du_festival">LIEUX DU FESTIVAL</a>
-                    <a href="<?php bloginfo("template_url") ?>/artistes">ARTISTES</a>
-                </div>
-                <div class="footer_nav_left_content_right_column_aPropos_nav">
-                    <div class="footer_green_title">
-                        <h4>À PROPOS</h4>
-                    </div>
-                    <ul>
-                        <li><a href='<?php echo get_home_url(); ?>/equipe-festival/'>L'équipe du festival</a></li>
-                        <li><a href='<?php bloginfo("template_url") ?>/prix_jocelyn_berube'>Prix Jocelyn Bérubé</a></li>
-                        <li><a href='<?php echo get_home_url(); ?>/la-bavarde/'>La Bavarde</a></li>
-                        <li><a href='<?php echo get_home_url(); ?>/festival-responsable/'>Vers un festival responsable</a></li>
-                        <li><a href='<?php bloginfo("template_url") ?>/galerie_media'>Galerie média</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
         <!-- footer contact et réseau -->
         <div class="footer_nav_right_content">
