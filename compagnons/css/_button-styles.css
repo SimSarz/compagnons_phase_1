@@ -1,8 +1,5 @@
 /*BOUTON DE LA NAV PRINCIPALE*/
 
-
-
-
 /*BOUTON CALL TO ACTION*/
 /*la classe .btn-cta doit être utilisés avec une 2e classe parmis:
 .white2blue
@@ -234,14 +231,19 @@
 .btn-link{
     padding: 12px;
     text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
 }
 
 .btn-link:hover, .btn-link:focus{
-    text-decoration: solid;
+    border-bottom: solid 2px black;
 }
 
 .btn-link:active{
-    font-size: 16px;
+    font-size: 19px;
+    border-bottom: solid 2px black;
 }
 
 .bg-white{
@@ -260,8 +262,6 @@
     color: black;
     background-color: white;
 }
-
-
 
 .no-bg-black{
     color: black;

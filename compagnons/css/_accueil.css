@@ -270,6 +270,95 @@
     align-items: center;
 }
 
+/*SECTION PROGRAMMATION*/
+
+.accueil_programmation{
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    background-color: white;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.accueil_programmation_titre{
+    background-color: black;
+    padding: 16px 8px;
+    color: white;
+    width: fit-content;
+    margin: 0 20px;
+}
+
+.accueil_programmation_container{
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: scroll;
+}
+
+.accueil_programmation_container::-webkit-scrollbar{
+    display: none;
+}
+
+.accueil_programmation_links-container{
+    width: 100%;
+    height: 175px;
+    position: relative;
+    margin-top: -20px;
+}
+
+.accueil_programmation_link--billeterie img{
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    transition: 0.3s;
+}
+
+.btn-ticket--animated{
+    animation: boucingEffect 900ms ease 0s 1 normal forwards;
+}
+
+@keyframes boucingEffect {
+	0%,
+	100% {
+		transform: rotate(0);
+		transform-origin: 50% 50%;
+	}
+
+	50% {
+		transform: rotate(6deg);
+	}
+
+	75% {
+		transform: rotate(-6deg);
+	}
+
+	90% {
+		transform: rotate(3.6deg);
+	}
+
+	95% {
+		transform: rotate(2.4deg);
+	}
+
+	99% {
+		transform: rotate(-1.2deg);
+	}
+}
+
+.accueil_programmation_link--programmation{
+    background-color: black;
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.accueil_programmation_link--programmation span{
+    color: white;
+}
+
 /*SECTION VIDÉO*/
 
 .accueil_video{
@@ -338,6 +427,29 @@
     
     .filiere_title{
         font-size: 32px;
+    }
+
+    .accueil_video{
+        background-color: black;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .accueil_carrousel{
+        width: 100vw;
+        margin: 0;
+        padding: 20px 0 40px 0;
+        background-color: var(--festival);
+    }
+    
+    .accueil_programmation_container{
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .accueil_programmation_links-container{
+        width: 500px;
+        margin: 0 auto;
     }
 }
 

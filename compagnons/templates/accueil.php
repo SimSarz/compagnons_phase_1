@@ -63,9 +63,9 @@
                 </div>
             </a>
         </div>
-        <section class="prog_widget">
-            <h3 class="accueil_section_event_title h2-cursive">Événement à venir</h3>
-            <div class="accueil_section_event">
+        <section class="accueil_programmation">
+            <h3 class="accueil_programmation_titre h2-cursive">Événements à venir</h3>
+            <div class="accueil_programmation_container">
                 <?php 
                                 $events = get_posts(array(
                                     'post_type' => 'evenement',
@@ -114,9 +114,9 @@
 
                 <?php endforeach; ?>
             </div>
-            <div class="accueil_section_event_bottom">
-                <a class="btn-link section_event_bottom_button" href="">Acheter des billets <span class="material-symbols-outlined section_event_bottom_link_btn">arrow_right_alt</span></a>
-                <a class="btn-link accueil_section_event_bottom_link section_event_bottom_link_btn_plus " href="">Voir plus <span class="material-symbols-outlined section_event_bottom_link_btn section_event_bottom_link_btn_plus_icon">arrow_right_alt</span></a>
+            <div class="accueil_programmation_links-container">
+                <a class="accueil_programmation_link--billeterie" href="https://lepointdevente.com/les-compagnons-de-la-mise-en-valeur-du-patrimoine-vivant-de-troi" aria-label="Acheter des billets"><img class="btn-ticket" src="<?php bloginfo('template_url'); ?>/images/billet_mockup.png" alt="Acheter des billets"</a>
+                <a class="accueil_programmation_link--programmation btn-link" href="<?php echo get_home_url(); ?>/evenements_a_venir"><span>aller au calendrier</span><span class="material-symbols-outlined section_event_bottom_link_btn section_event_bottom_link_btn_plus_icon">arrow_right_alt</span></a>
             </div>
         </section>
 
