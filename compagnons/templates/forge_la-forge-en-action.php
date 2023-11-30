@@ -45,7 +45,7 @@
                     <div class="laforgeaction_autres2_text">
                         <p class="textblock">Au fil des années, la Forge a notamment accueilli des événements produits par</p>
                         <ul class="textblock">
-                            <li class="laforgeaction_autres2_text_list"><a class="link" href="cfcatherineleblond.org" target="_blank">Le Centre-Femmes Catherine-Leblond</a></li>
+                            <li class="laforgeaction_autres2_text_list"><a class="link" href="https://cfcatherineleblond.com/" target="_blank">Le Centre-Femmes Catherine-Leblond</a></li>
                             <li class="laforgeaction_autres2_text_list"><a class="link" href="https://paraloeil.com/" target="_blank">Paraloeil - cinéma et centre de production</a></li>
                             <li class="laforgeaction_autres2_text_list"><a class="link" href="https://www.tourismelesbasques.com/" target="_blank">La MRC des Basques</a></li>
                             <li class="laforgeaction_autres2_text_list"><a class="link" href="https://www.ville-trois-pistoles.ca/" target="_blank">La Ville de Trois-Pistoles</a></li>

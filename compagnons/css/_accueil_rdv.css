@@ -261,6 +261,7 @@
     background-color: black;
     padding: 10px;
     margin: 0px;
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .sub_section_link:focus{

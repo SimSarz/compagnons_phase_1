@@ -34,7 +34,7 @@
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/evenements_a_venir/"><span class="top-nav-text">Événements à venir</span></a></li>
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="https://lepointdevente.com/les-compagnons-de-la-mise-en-valeur-du-patrimoine-vivant-de-troi" target="_blank"><span class="top-nav-text">Acheter des billets</span></a></li>
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/contact/"><span class="top-nav-text">Contact</span></a></li>
-                    <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/compagnons_accueil"><span class="top-nav-text">À propos</span></a></li>
+                    <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/accueil_compagnons"><span class="top-nav-text">À propos</span></a></li>
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/faq/"><span class="top-nav-text">FAQ</span></a></li>       
                 </ul>
             </nav>
@@ -98,40 +98,16 @@
                     <div class="main_nav_menu--festival dropdown">
                         <div class="main_nav_menu_link dropdown_btn btn_festival">
                             <button class="main_nav_menu_link_btn nav-festival">
-                                <div class="main_nav_menu_link_btn_titles">
-                                    <p class="main_nav_menu_link_btn_title">LE RENDEZ-VOUS DES</p>
-                                    <p class="main_nav_menu_link_btn_title2">GRANDES GUEULES</p>
-                                </div>
+                                <a href="<?php echo get_home_url(); ?>/accueil-rendez-vous">
+                                    <div class="main_nav_menu_link_btn_titles">
+                                        <p class="main_nav_menu_link_btn_title">LE RENDEZ-VOUS DES</p>
+                                        <p class="main_nav_menu_link_btn_title2">GRANDES GUEULES</p>
+                                    </div>
+                                </a>
                                 <span class="material-symbols-outlined">
                                     expand_more
                                 </span>
                             </button>
-                        </div>
-                        <div class="main_nav_menu_submenu dropdown_content">
-                            <a class="main_nav_menu_submenu_link" href="<?php bloginfo("template_url") ?>/evenements_a_venir/" target="">
-                                <button class="main_nav_menu_submenu_link_btn nav-festival toplist"><span class="submenu-link">Programmation 2023</span></button>
-                            </a>
-                            <a class="main_nav_menu_submenu_link" href="<?php bloginfo("template_url") ?>/lieux_du_festival/">
-                                <button class="main_nav_menu_submenu_link_btn nav-festival"><span class="submenu-link">Lieux du festival</span></button>
-                            </a>
-                            <a class="main_nav_menu_submenu_link" href="<?php bloginfo("template_url") ?>/artistes/">
-                                <button class="main_nav_menu_submenu_link_btn nav-festival"><span class="submenu-link">Artistes</span></button>
-                            </a>
-                            <a class="main_nav_menu_submenu_link" href="<?php bloginfo("template_url") ?>/simpliquer/">
-                                <button class="main_nav_menu_submenu_link_btn nav-festival"><span class="submenu-link">S'impliquer</span></button>
-                            </a>
-                            <div class="main_nav_menu_submenu_link a-propos_link ">
-                                <button class="main_nav_menu_submenu_link_btn a-propos_btn">
-                                <p class="submenu-link a-propos_titre"> À propos</p>
-                                    <ul class="main_nav_menu_submenu_link_btn_list">
-                                        <li class="main_nav_menu_submenu_link_btn_list_item"><a class="main_nav_menu_submenu_link_btn_list_item_link" href="<?php bloginfo("template_url") ?>/equipe-festival/"><span class="submenu-items">L'équipe du festival</span></a></li>
-                                        <li class="main_nav_menu_submenu_link_btn_list_item"><a class="main_nav_menu_submenu_link_btn_list_item_link" href="<?php bloginfo("template_url") ?>/prix_jocelyn_berube"><span class="submenu-items">Le prix Jocelyn Bérubé</span></a></li>
-                                        <li class="main_nav_menu_submenu_link_btn_list_item"><a class="main_nav_menu_submenu_link_btn_list_item_link" href="<?php bloginfo("template_url") ?>/la-bavarde"><span class="submenu-items">La Bavarde: La bière officielle</span></a></li>
-                                        <li class="main_nav_menu_submenu_link_btn_list_item"><a class="main_nav_menu_submenu_link_btn_list_item_link" href="<?php bloginfo("template_url") ?>/festival-responsable/"><span class="submenu-items">Vers un festival responsable</span></a></li>
-                                        <li class="main_nav_menu_submenu_link_btn_list_item"><a class="main_nav_menu_submenu_link_btn_list_item_link" href="<?php bloginfo("template_url") ?>/galerie_media/"><span class="submenu-items">Galerie médias</span></a></li>
-                                    </ul>
-                                </button>
-                            </div>
                         </div>
                     </div>
                     <div class="main_nav_menu--vents">

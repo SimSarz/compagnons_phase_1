@@ -184,9 +184,7 @@ const dateSearch = document.querySelector('.box_content_dateBox_input');
 
 function filterCards() {
     const cards = document.querySelectorAll(".eventCard");
-
     let selectedDate = document.getElementById("date_event").value;
-
     let filterSearchInput = filterSearch.value.toLowerCase();
 
     if (selectedDate) {
@@ -215,7 +213,7 @@ function filterCards() {
             (selectedDate === "" || eventDate === selectedDate) &&
             (filterSearchInput === "" || cardText.includes(removeAccents(filterSearchInput)));
             card.style.display = showCard ? "" : "none";
-        });
+    });
 }
 
 function removeAccents(str) {
