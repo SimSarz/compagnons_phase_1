@@ -120,19 +120,18 @@
             </div>
         </section>
 
-        <section class="accueil_section_video">
-            <div class="accueil_video_black_banner">
+        <section class="accueil_video">
+            <div class="accueil_video_banner">
                 <h4 class="h4">RENDEZ-VOUS DES GRANDES GUEULES</h4>
                 <p class="textblock"><time datetime="2023">2023</time>, la 27e édition!</p>
             </div>
-            <div class="accueil_video_container">
-            <video class="video_accueil" controls preload="auto">
-                    <source src="<?php bloginfo("template_url") ?>/images/video_rvgg_long_low-res.mp4">
+            <video class="accueil_video_container" controls preload="none" poster="<?php bloginfo('template_url'); ?>/images/video_poster.png">
+                <source src="<?php bloginfo("template_url") ?>/images/video_rvgg_long_low-res.mp4">
             </video>
         </section>
-        <div class="derniere_edition_imgs">
-            <p class="les_meilleurs_moments">Les meilleurs moments de notre dernière édition</p>
-            <div class="images_container">
+        <div class="accueil_carrousel">
+            <h4 class="accueil_carrousel_titre h4">Les meilleurs moments de notre dernière édition</h4>
+            <div class="accueil_carrousel_container">
                 <?php echo do_shortcode('[smartslider3 slider="2"]'); ?> 
             </div>
         </div>
