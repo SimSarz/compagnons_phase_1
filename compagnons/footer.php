@@ -12,7 +12,7 @@
                 <h3>NE MANQUEZ AUCUNE NOUVELLE!</h3>
                 <h4>Abonnez-vous à notre infolettre!</h4>
                 <div class="btn_container">
-                    <button class="sub_btn btn-cta white2black"><span class="btn-default">s'abonner</span></button>
+                    <a href="https://app.cyberimpact.com/clients/7636/subscribe-forms/2E65C2F6-39A0-46A5-96F6-5803B9460CD4"><button class="sub_btn btn-cta white2black"><span class="btn-default">s'abonner</span></button></a>
                 </div>
             </div>
             <div class="infolettre_banner_content_container_right_content">
