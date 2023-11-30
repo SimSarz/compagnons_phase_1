@@ -1,7 +1,7 @@
-const pageProg = document.querySelector(".programmation");
-const progWidget = document.querySelector(".accueil_section_event");
+const pageProg = document.querySelector(".programmation"); // Page de programmation
+const progWidget = document.querySelector(".prog_widget");
 
-// SECTION PROGRAMMATION
+// SECTION PROGRAMMATION ------- CSS
 if (window.innerWidth >= 900) {
     const eventCards = document.querySelectorAll(".eventCard");
 
@@ -9,7 +9,6 @@ if (window.innerWidth >= 900) {
         const eventCardInfoBox = eventCard.querySelector(".eventCard_infoBox");
         const eventCardInfoBoxContent = eventCard.querySelector(".eventCard_infoBox_info");
         const eventCardInfoDate = eventCard.querySelector(".eventCard_infoBox_date");
-        const eventCardDesc = eventCard.querySelector(".eventCard_infoBox_info_container_desc");
 
         eventCard.addEventListener("mouseenter", () => {
             eventCardInfoBoxContent.style.display = "flex";
@@ -27,10 +26,10 @@ if (window.innerWidth >= 900) {
     });
 }
 
-// INPUTS 
-// SEARCH
+// INPUTS SEARCH MOBILE ----- CSS
 let windowWidth = window.innerWidth;
 const filtersBtn = document.querySelector('.programmation_filters_button_icon');
+const filtersBox = document.querySelector('.programmation_filters_box');
 
 function widthChange() {
     const filtersBox = document.querySelector('.programmation_filters_box');
@@ -55,11 +54,6 @@ function widthChange() {
     }
 }
 
-widthChange();
-window.addEventListener('resize', widthChange);
-
-const filtersBox = document.querySelector('.programmation_filters_box');
-
 if (filtersBox) {
     if (windowWidth <= 599) {
         filtersBox.classList.add('filtersBoxOff');
@@ -68,14 +62,21 @@ if (filtersBox) {
     }
 }
 
-// FILTER MODE 
+window.addEventListener('resize', widthChange);
+widthChange();
+
+// FILTER MODE
 const eventCards = document.querySelectorAll(".eventCard");
 const eventCardsArray = Array.from(eventCards);
 
-if (pageProg) {
+const eventCardsContainer = document.querySelector('.programmation_cardBox');
+const eventCardWidgetContainer = document.querySelector('.accueil_section_event');
+
+if (pageProg) { // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     eventCards.forEach((eventCard) => {
         const freeTag = eventCard.querySelector('.eventCard_tag_freeOption');
         const famTag = eventCard.querySelector('.eventCard_tag_familialeOption');
+
         if (freeTag.textContent === "1") {
             freeTag.classList.remove('hidden');
             freeTag.textContent = "Gratuit";
@@ -91,8 +92,7 @@ if (pageProg) {
         }
     });
     
-    
-    eventCardsArray.sort(function(a, b) {
+    eventCardsArray.sort(function(a, b) {  // Convertir les dates de francais à anglais et pour vérifier si la date est supérieur ou inférieur à la seconde carte
         const eventDateElementA = a.querySelector('.eventCard_tag_dataDate');
         const eventDateElementB = b.querySelector('.eventCard_tag_dataDate');
     
@@ -112,64 +112,22 @@ if (pageProg) {
     
         return dateA - dateB;
     });
-}
 
-if (progWidget) {
-    eventCardsArray.sort(function(a, b) {
-        const eventDateElementA = a.querySelector('.eventCard_tag_dataDate');
-        const eventDateElementB = b.querySelector('.eventCard_tag_dataDate');
-
-        const eventDateStringA = eventDateElementA.textContent.trim().split('/');
-        const eventDateStringB = eventDateElementB.textContent.trim().split('/');
-
-        const jourA = parseInt(eventDateStringA[0], 10);
-        const moisA = parseInt(eventDateStringA[1], 10) - 1;
-        const anneeA = parseInt(eventDateStringA[2], 10);
-
-        const jourB = parseInt(eventDateStringB[0], 10);
-        const moisB = parseInt(eventDateStringB[1], 10) - 1;
-        const anneeB = parseInt(eventDateStringB[2], 10);
-
-        const dateA = new Date(anneeA, moisA, jourA);
-        const dateB = new Date(anneeB, moisB, jourB);
-
-        return dateA - dateB;
-    });
-
-    for (let i = 0; i < eventCardsArray.length; i++) {
-        const eventCard = eventCardsArray[i];
-        const freeTag = eventCard.querySelector('.eventCard_tag_freeOption');
-        const famTag = eventCard.querySelector('.eventCard_tag_familialeOption');
-        if (freeTag.textContent === "1") {
-            freeTag.classList.remove('hidden');
-            freeTag.textContent = "Gratuit";
-        } else {
-            freeTag.classList.add('hidden');
-        }
-
-        if (famTag.textContent === "1") {
-            famTag.classList.remove('hidden');
-            famTag.textContent = "Familiale";
-        } else {
-            famTag.classList.add('hidden');
-        }
-
-        if (i < 3) {
-            eventCard.classList.remove('hidden'); // Afficher les trois premières cartes
-        } else {
-            eventCard.classList.add('hidden'); // Masquer les autres cartes
-        }
-    }
-}
-
-
-const eventCardsContainer = document.querySelector('.programmation_cardBox');
-const eventCardWidgetContainer = document.querySelector('.accueil_section_event');
-
-if (pageProg) {
     eventCardsArray.forEach(function(card){
         eventCardsContainer.appendChild(card);
-    });    
+    });  
+
+    const today = new Date();
+
+    eventCardsArray.forEach((eventCard) => {
+        const dateTag = eventCard.querySelector('.eventCard_tag_dataDate').innerHTML;
+        const [day, month, year] = dateTag.split('/');
+        const formattedDate = new Date(`${year}-${month}-${day}`);
+        console.log(formattedDate);
+        if (formattedDate < today) {
+            eventCard.classList.add('hidden');
+        }
+    }) 
 }
 
 
@@ -219,6 +177,7 @@ function filterCards() {
 function removeAccents(str) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
+
 if (dateSearch) {
     dateSearch.addEventListener("change", filterCards);
 }
@@ -242,17 +201,3 @@ if (disciplineSelect) {
 if (pageProg) {
     filterCards();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
