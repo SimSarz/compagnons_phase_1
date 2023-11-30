@@ -63,56 +63,62 @@
                 </div>
             </a>
         </div>
+
         <section class="prog_widget">
             <h3 class="accueil_section_event_title h2-cursive">Événement à venir</h3>
-            <div class="accueil_section_event">
-                <?php 
-                                $events = get_posts(array(
-                                    'post_type' => 'evenement',
-                                    'numberposts' => -1 
-                                ));
-                                ?>
+            <div class="accueil_section_event programmation">
+                    <div class="container_programmation_cardBox accueil_cardBox">
+                        <div class="programmation_cardBox accueil_programmation_cardBox">
+                            <?php 
+                            $events = get_posts(array(
+                                'post_type' => 'evenement',
+                                'numberposts' => -1 
+                            ));
+                            ?>
 
-                                <?php foreach($events as $event) : 
-                                $title = get_field('eventtitle', $event -> ID);
-                                $desc = get_field('description_de_levenement', $event -> ID);
-                                $date = get_field('date_de_levenement', $event -> ID);
-                                $jour = get_field('jour_de_levenement', $event -> ID);
-                                $lieu = get_field('lieu', $event -> ID);
-                                $heure = get_field('heure', $event -> ID);
-                                $prix = get_field('prix', $event -> ID);
-                                $billeterie = get_field('billeterie', $event -> ID);
-                                $image = get_field('event_img', $event -> ID);
+                            <?php foreach($events as $event) : 
+                            $title = get_field('eventtitle', $event -> ID);
+                            $desc = get_field('description_de_levenement', $event -> ID);
+                            $date = get_field('date_de_levenement', $event -> ID);
+                            $jour = get_field('jour_de_levenement', $event -> ID);
+                            $lieu = get_field('lieu', $event -> ID);
+                            $heure = get_field('heure', $event -> ID);
+                            $prix = get_field('prix', $event -> ID);
+                            $billeterie = get_field('billeterie', $event -> ID);
+                            $image = get_field('event_img', $event -> ID);
 
-                                $image_url = esc_url($image['url']);
-                                $image_alt = esc_attr($image['alt']);
+                            $image_url = esc_url($image['url']);
+                            $image_alt = esc_attr($image['alt']);
 
-                                $discipline = get_field('discipline', $event->ID);
-                                $free_option = get_field('free_option', $event->ID);
-                                $familiale_option = get_field('familiale_option', $event->ID);
-                                $data_date = get_field('data_date', $event->ID);
-                                ?>
+                            $discipline = get_field('discipline', $event->ID);
+                            $free_option = get_field('free_option', $event->ID);
+                            $familiale_option = get_field('familiale_option', $event->ID);
+                            $data_date = get_field('data_date', $event->ID);
+                            ?>
 
-                                <?php get_template_part('template-part/carte_evenement', null, array(
-                                    "title" => $title,
-                                    "desc" => $desc,
-                                    "date" => $date,
-                                    "jour" => $jour,
-                                    "lieu" => $lieu,
-                                    "heure" => $heure,
-                                    "prix" => $prix, 
-                                    "billeterie" => $billeterie,
-                                    "image" => $image,
-                                    "image_url" => $image_url,
-                                    "image_alt" => $image_alt,
-                                    "discipline" => $discipline,
-                                    "free_option" => $free_option,
-                                    "familiale_option" => $familiale_option,
-                                    "data_date" => $data_date
-                                ));     
-                                ?>
+                            <?php get_template_part('template-part/carte_evenement', null, array(
+                                "title" => $title,
+                                "desc" => $desc,
+                                "date" => $date,
+                                "jour" => $jour,
+                                "lieu" => $lieu,
+                                "heure" => $heure,
+                                "prix" => $prix, 
+                                "billeterie" => $billeterie,
+                                "image" => $image,
+                                "image_url" => $image_url,
+                                "image_alt" => $image_alt,
+                                "discipline" => $discipline,
+                                "free_option" => $free_option,
+                                "familiale_option" => $familiale_option,
+                                "data_date" => $data_date
+                            ));     
+                            ?>
 
-                <?php endforeach; ?>
+                            <?php endforeach; ?>
+
+                        </div>
+                    </div>
             </div>
             <div class="accueil_section_event_bottom">
                 <a class="btn-link section_event_bottom_button" href="">Acheter des billets <span class="material-symbols-outlined section_event_bottom_link_btn">arrow_right_alt</span></a>
@@ -120,16 +126,6 @@
             </div>
         </section>
 
-        <section class="accueil_section_video">
-            <div class="accueil_video_black_banner">
-                <h4 class="h4">RENDEZ-VOUS DES GRANDES GUEULES</h4>
-                <p class="textblock"><time datetime="2023">2023</time>, la 27e édition!</p>
-            </div>
-            <div class="accueil_video_container">
-            <video class="video_accueil" controls preload="auto">
-                    <source src="<?php bloginfo("template_url") ?>/images/video_rvgg_long_low-res.mp4">
-            </video>
-        </section>
         <div class="derniere_edition_imgs">
             <p class="les_meilleurs_moments">Les meilleurs moments de notre dernière édition</p>
             <div class="images_container">

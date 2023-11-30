@@ -35,7 +35,6 @@ if (compagnonsBanner){
 /* ---- Banniere filiere forge --- */
 
 if (forgeBanner){
-
     function forgeBannerHover () {
         forgeBanner.classList.add("filiere_banner_forge_hover");
         forgeBanner.classList.remove("filiere_banner_forge_out");
