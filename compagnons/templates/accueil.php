@@ -65,9 +65,7 @@
         </div>
         <section class="accueil_programmation">
             <h3 class="accueil_programmation_titre h2-cursive">Événements à venir</h3>
-            <div class="accueil_programmation_container accueil_section_event programmation">
-                <div class="container_programmation_cardBox accueil_cardBox">
-                        <div class="programmation_cardBox accueil_programmation_cardBox">
+            <div class="accueil_programmation_container">
                             <?php 
                             $events = get_posts(array(
                                 'post_type' => 'evenement',
