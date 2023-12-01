@@ -539,6 +539,21 @@
 }
 
 /* WIDGET */
+
+.prog_widget {
+    background-color: white;
+    margin: auto;
+}
+
+.accueil_cardBox >.programmation_cardBox {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.prog_widget > .programmation {
+    padding-bottom: 10px;
+}
+
 .accueil_section_event {
     display: flex;
 }
@@ -616,23 +631,17 @@
 }
 
 @media screen  and (max-width: 900px) {
-    .prog_widget {
-        width: 100%;
-        padding-bottom: 10px;
-    }
-
-    .accueil_section_event_title {
-        margin-left: 5px;
-    }
-
-    .accueil_section_event {
+    .accueil_cardBox >.programmation_cardBox {
+        flex-wrap: nowrap;
+        width: 100vw;
         overflow-x: auto;
-        margin-bottom: 5px;
     }
 }
 
-@media screen  and (max-width: 1999px) {
-    .prog_widget {
-        background-color: white;
-    }
-}   
+@media screen  and (min-width: 900px) {
+    .prog_widget, .accueil_cardBox >.programmation_cardBox {
+        width: 800px; /* Largeur du widget */
+    }    
+}
+
+
