@@ -22,10 +22,13 @@
 }
 
 /*------------------------ CARTES ------------------------*/
+.eventCard, .eventCard_photoBox {
+    width: 340px; /* GROSSEUR DES CARTES ICI SEULEMENT ------------ VERSION MOBILE --------------------------------- */ 
+    height: 500px;
+}
+
 .eventCard {
     font-family: 'Montserrat', sans-serif;
-    width: fit-content;
-    max-width: 170px; /* GROSSEUR DES CARTES ICI SEULEMENT ------------ VERSION MOBILE --------------------------------- */ 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -153,8 +156,6 @@
 }
 
 .eventCard_photoBox {
-    width: 170px;
-    height: 280px;
     overflow: hidden;
 }
 
@@ -210,10 +211,16 @@
         width: 780px;
     }
 
+    .eventCard_infoBox_info_container_title {
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
     /* CARTES */
     .eventCard {
         width: 250px;
         max-width: 250px; /* GROSSEUR DES CARTES ICI SEULEMENT */
+        height: 410px;
     }
 
     .eventCard_infoBox{
@@ -334,10 +341,6 @@
         padding: 0;
     }
 
-    .eventCard {
-        height: 348px;
-    }
-
     .eventCard_container {
         height: 82%;
     }
@@ -349,7 +352,7 @@
     .eventCard_infoBox_info_buttonContainer {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        height: 130px;
     }
 
     .eventCard_infoBox_info_buttonContainer > p {
@@ -372,7 +375,7 @@
 
     .eventCard_titleBox {
         display: block;
-        height: 170px;
+        height: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
