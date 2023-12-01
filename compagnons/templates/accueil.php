@@ -63,11 +63,10 @@
                 </div>
             </a>
         </div>
-
-        <section class="prog_widget">
-            <h3 class="accueil_section_event_title h2-cursive">Événement à venir</h3>
-            <div class="accueil_section_event programmation">
-                    <div class="container_programmation_cardBox accueil_cardBox">
+        <section class="accueil_programmation">
+            <h3 class="accueil_programmation_titre h2-cursive">Événements à venir</h3>
+            <div class="accueil_programmation_container accueil_section_event programmation">
+                <div class="container_programmation_cardBox accueil_cardBox">
                         <div class="programmation_cardBox accueil_programmation_cardBox">
                             <?php 
                             $events = get_posts(array(
@@ -86,7 +85,6 @@
                             $prix = get_field('prix', $event -> ID);
                             $billeterie = get_field('billeterie', $event -> ID);
                             $image = get_field('event_img', $event -> ID);
-
                             $image_url = esc_url($image['url']);
                             $image_alt = esc_attr($image['alt']);
 
@@ -114,18 +112,27 @@
                                 "data_date" => $data_date
                             ));     
                             ?>
-
                             <?php endforeach; ?>
-
                         </div>
                     </div>
             </div>
-            <div class="accueil_section_event_bottom">
-                <a class="btn-link section_event_bottom_button" href="">Acheter des billets <span class="material-symbols-outlined section_event_bottom_link_btn">arrow_right_alt</span></a>
-                <a class="btn-link accueil_section_event_bottom_link section_event_bottom_link_btn_plus " href="">Voir plus <span class="material-symbols-outlined section_event_bottom_link_btn section_event_bottom_link_btn_plus_icon">arrow_right_alt</span></a>
+            <div class="accueil_programmation_links-container">
+                <a class="accueil_programmation_link--billeterie" href="https://lepointdevente.com/les-compagnons-de-la-mise-en-valeur-du-patrimoine-vivant-de-troi" aria-label="Acheter des billets"><img class="btn-ticket" src="<?php bloginfo('template_url'); ?>/images/billet_mockup.png" alt="Acheter des billets"</a>
+                <a class="accueil_programmation_link--programmation btn-link" href="<?php echo get_home_url(); ?>/evenements_a_venir"><span>aller au calendrier</span><span class="material-symbols-outlined section_event_bottom_link_btn section_event_bottom_link_btn_plus_icon">arrow_right_alt</span></a>
             </div>
         </section>
-
+        <section class="accueil_video">
+            <div class="accueil_video_banner">
+                <h4 class="h4">RENDEZ-VOUS DES GRANDES GUEULES</h4>
+                <p class="textblock"><time datetime="2023">2023</time>, la 27e édition!</p>
+            </div>
+            <video class="accueil_video_container" controls preload="none" poster="<?php bloginfo('template_url'); ?>/images/video_poster.png">
+                <source src="<?php bloginfo("template_url") ?>/images/video_rvgg_long_low-res.mp4">
+            </video>
+        </section>
+        <div class="accueil_carrousel">
+            <h4 class="accueil_carrousel_titre h4">Les meilleurs moments de notre dernière édition</h4>
+            <div class="accueil_carrousel_container">
         <div class="derniere_edition_imgs">
             <p class="les_meilleurs_moments">Les meilleurs moments de notre dernière édition</p>
             <div class="images_container">

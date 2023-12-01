@@ -106,3 +106,11 @@ if (ventsBanner){
     ventsBanner.addEventListener('mouseout', ventsBannerOut);
     ventsBanner.addEventListener('focusout', ventsBannerOut);
 };
+
+/*--------------EFFET BOUTON-----------------*/
+
+btnTicket = document.querySelector('.btn-ticket');
+
+btnTicket.addEventListener("click", () =>{
+    btnTicket.classList.add('btn-ticket--animated');
+})
