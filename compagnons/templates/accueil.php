@@ -69,6 +69,7 @@
                             <?php 
                             $events = get_posts(array(
                                 'post_type' => 'evenement',
+                                'posts_per_page' => 3,
                                 'numberposts' => -1 
                             ));
                             ?>
