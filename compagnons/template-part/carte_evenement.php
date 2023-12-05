@@ -17,8 +17,8 @@ $args = wp_parse_args($args, array(
 ));
 ?>
 
-<div class="eventCard" tabindex="0">
-    <div class="eventCard_container">
+<div class="eventCard">
+    <div class="eventCard_top-section">
         <div class="eventCard_infoBox">
             <div class="eventCard_infoBox_date">
                 <p class="eventCard_infoBox_date_day"><?php echo $args['jour']?></p>

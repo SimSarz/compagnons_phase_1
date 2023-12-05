@@ -1,4 +1,4 @@
-const pageProg = document.querySelector(".programmation"); // Page de programmation
+/*const pageProg = document.querySelector(".programmation"); // Page de programmation
 const progWidget = document.querySelector(".prog_widget");
 
 // SECTION PROGRAMMATION ------- CSS
@@ -123,8 +123,8 @@ if (pageProg) { // -------------------------------------------------------------
         const dateTag = eventCard.querySelector('.eventCard_tag_dataDate').innerHTML;
         const [day, month, year] = dateTag.split('/');
         const formattedDate = new Date(`${year}-${month}-${day}`);
-        console.log(formattedDate);
-        if (formattedDate < today) {
+        /*console.log(formattedDate);*/
+        /*if (formattedDate < today) {
             eventCard.classList.add('hidden');
         }
     }) 
@@ -201,3 +201,8 @@ if (disciplineSelect) {
 if (pageProg) {
     filterCards();
 }
+
+eventCards.forEach(card => {
+    console.log(card.classList);
+    console.log(card.value)
+})*/

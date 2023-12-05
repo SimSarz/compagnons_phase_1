@@ -109,8 +109,10 @@ if (ventsBanner){
 
 /*--------------EFFET BOUTON-----------------*/
 
-btnTicket = document.querySelector('.btn-ticket');
+const btnTicket = document.querySelector('.btn-ticket');
 
-btnTicket.addEventListener("click", () =>{
-    btnTicket.classList.add('btn-ticket--animated');
-})
+if (btnTicket) {
+    btnTicket.addEventListener("click", () => {
+        btnTicket.classList.add('btn-ticket--animated');
+    });
+}

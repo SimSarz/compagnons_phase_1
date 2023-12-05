@@ -1,6 +1,3 @@
-
-
-
 /*------------------------ CONTAINER DE CARTES ------------------------*/
 .container_programmation_cardBox {
     display: flex;
@@ -10,7 +7,8 @@
 .programmation_cardBox {
     display: flex;
     flex-wrap: wrap;
-    width: 360px;
+    width: 100%;
+    height: fit-content;
 }
 
 .programmation_main_corr {
@@ -24,8 +22,7 @@
 /*------------------------ CARTES ------------------------*/
 .eventCard {
     font-family: 'Montserrat', sans-serif;
-    width: fit-content;
-    max-width: 170px; /* GROSSEUR DES CARTES ICI SEULEMENT ------------ VERSION MOBILE --------------------------------- */ 
+    width: 300px; /* GROSSEUR DES CARTES ICI SEULEMENT ------------ VERSION MOBILE --------------------------------- */ 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -329,74 +326,3 @@
     }
 }
 
-@media screen and (max-width: 899px) {
-    .programmation_main_corr {
-        padding: 0;
-    }
-
-    .eventCard {
-        height: 348px;
-    }
-
-    .eventCard_container {
-        height: 82%;
-    }
-
-    .eventCard_infoBox {
-        height: 100%;
-    }
-
-    .eventCard_infoBox_info_buttonContainer {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-    }
-
-    .eventCard_infoBox_info_buttonContainer > p {
-        color: white;
-        text-decoration: none;
-        width: 90%;
-        margin: auto;
-        font-weight: 600;
-        padding: 8px 0;
-    }
-
-    .eventCard_link > button {
-        width: 90%;
-        margin: auto;
-    }
-
-    .eventCard_link {
-        height: 40px;
-    }
-
-    .eventCard_titleBox {
-        display: block;
-        height: 170px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-left: 5px;
-    }
-
-    .eventCard_titleBox > .eventCard_infoBox_info_container_title {
-        display: none;
-    }
-
-    .eventCard_infoBox_info_container > .eventCard_infoBox_info_container_placeNPrice {
-        display: none;
-    }
-
-    .eventCard_titleBox > .eventCard_infoBox_info_container_lieu {
-        font-size: 0.9em;
-        text-align: center;
-        font-weight: 500;
-    }
-
-    .eventCard_titleBox > .eventCard_infoBox_info_container_placeNPrice_hour {
-        font-size: 0.8em;
-        padding-top: 4px;
-        font-weight: 450;
-    }
-}
