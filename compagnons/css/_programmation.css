@@ -1,6 +1,3 @@
-
-
-
 /*------------------------ CONTAINER DE CARTES ------------------------*/
 .container_programmation_cardBox {
     display: flex;
@@ -10,7 +7,8 @@
 .programmation_cardBox {
     display: flex;
     flex-wrap: wrap;
-    width: 360px;
+    width: 100%;
+    height: fit-content;
 }
 
 .programmation_main_corr {
@@ -29,6 +27,7 @@
 
 .eventCard {
     font-family: 'Montserrat', sans-serif;
+    width: 300px; /* GROSSEUR DES CARTES ICI SEULEMENT ------------ VERSION MOBILE --------------------------------- */ 
     position: relative;
     display: flex;
     flex-direction: column;

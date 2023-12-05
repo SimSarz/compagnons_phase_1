@@ -11,9 +11,10 @@ function files() {
     wp_enqueue_script('_accordion2', "/wp-content/themes/compagnons/js/classes/_accordion2.js", array(), "",  array( 'strategy' => 'defer'));
     wp_enqueue_script('_programmation', "/wp-content/themes/compagnons/js/classes/_programmation.js", array(), "",  array( 'strategy' => 'defer'));
     wp_enqueue_script( '_header-minifier',"/wp-content/themes/compagnons/js/classes/_header-minifier.js", array("jquery"), "1.0.0",  array( 'strategy' => 'defer'));
+    wp_enqueue_script( 'cartes_v2',"/wp-content/themes/compagnons/js/cartes_v2.js", array("jquery"), "1.0.0",  array( 'strategy' => 'defer'));
 };
 
-add_action( 'wp_enqueue_scripts', 'files' );
+add_action( 'wp_enqueue_scripts','files' );
 
 function my_acf_json_load_point( $paths ) {
     unset($paths[0]);
@@ -51,6 +52,22 @@ add_action( 'init', function() {
     ) );
 } );
 
+add_action('init', function() {
+    register_post_type( 'new-evenement', array(
+        'labels' => array(
+            'name' => 'new-evenements',
+            'singular-name' => 'new-evenement'
+        ),
+        'has-archive' => false,
+        'public' => true,
+        'supports' => array(
+            0 => 'title',
+            1 => 'thumbnail',
+            2 => 'id'
+            ),
+        'delete_with_user' => false,
+    ) );
+} );
 
     //SETTING LOGO
 
@@ -64,5 +81,55 @@ add_action( 'init', function() {
     };
 
     add_action("after_setup_theme", "logo_setup");
+
+    //TRANSFERT EVENEMENTS FROM PHP TO JS 
+
+    function enqueue_custom_script() {
+        // Enqueue your script
+        wp_enqueue_script('carts_v2', get_template_directory_uri() . '/js/cartes_v2.js', array('jquery'), null, true);
+    
+        // Query your custom posts of type 'new-evenement'
+        $args = array(
+            'post_type' => 'new-evenement',
+            'posts_per_page' => -1, // Retrieve all posts
+        );
+    
+        $custom_posts = new WP_Query($args);
+    
+        // Extract and prepare data for JavaScript
+        $posts_data = array();
+        if ($custom_posts->have_posts()) {
+            while ($custom_posts->have_posts()) {
+                $custom_posts->the_post();
+    
+                // Get custom fields or post data as needed
+                $post_data = array(
+                    'titre' => get_field('titre'),
+                    'date' => get_field('date'),
+                    'lieu' => get_field('lieu'),
+                    'artiste' => get_field('artiste'),
+                    'desc' => get_field('desc'),
+                    'disciplines' => get_field('disciplines'),
+                    'gratuit' => get_field('gratuit'),
+                    'familial' => get_field('familial'),
+                    'jour_semaine' => get_field('jour_semaine'),
+                    'jour'=> get_field('date_jour'),
+                    'mois' => get_field('date_mois'),
+                    'heure' => get_field('heure'),
+                    'img' => get_field('image'),
+                    'alt' => get_field('alt')
+                );
+    
+                $posts_data[] = $post_data;
+            }
+            wp_reset_postdata();
+        }
+    
+        // Pass the data to the script
+        wp_localize_script('cartes_v2', 'custom_posts_data', $posts_data);
+    }
+    
+    add_action('wp_enqueue_scripts', 'enqueue_custom_script');
+    
 
 ?>

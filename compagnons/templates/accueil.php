@@ -65,59 +65,49 @@
         </div>
         <section class="accueil_programmation">
             <h3 class="accueil_programmation_titre h2-cursive">Événements à venir</h3>
-            <div class="accueil_programmation_container accueil_section_event programmation">
-            <div class="container_programmation_cardBox accueil_cardBox">
-                        <div class="programmation_cardBox accueil_programmation_cardBox">
-                            <?php 
-                            $events = get_posts(array(
-                                'post_type' => 'evenement',
-                                'numberposts' => -1 
-                            ));
-                            ?>
-
-                            <?php foreach($events as $event) : 
-                            $title = get_field('eventtitle', $event -> ID);
-                            $desc = get_field('description_de_levenement', $event -> ID);
-                            $date = get_field('date_de_levenement', $event -> ID);
-                            $jour = get_field('jour_de_levenement', $event -> ID);
-                            $lieu = get_field('lieu', $event -> ID);
-                            $heure = get_field('heure', $event -> ID);
-                            $prix = get_field('prix', $event -> ID);
-                            $billeterie = get_field('billeterie', $event -> ID);
-                            $image = get_field('event_img', $event -> ID);
-
-                            $image_url = esc_url($image['url']);
-                            $image_alt = esc_attr($image['alt']);
-
-                            $discipline = get_field('discipline', $event->ID);
-                            $free_option = get_field('free_option', $event->ID);
-                            $familiale_option = get_field('familiale_option', $event->ID);
-                            $data_date = get_field('data_date', $event->ID);
-                            ?>
-
-                            <?php get_template_part('template-part/carte_evenement', null, array(
-                                "title" => $title,
-                                "desc" => $desc,
-                                "date" => $date,
-                                "jour" => $jour,
-                                "lieu" => $lieu,
-                                "heure" => $heure,
-                                "prix" => $prix, 
-                                "billeterie" => $billeterie,
-                                "image" => $image,
-                                "image_url" => $image_url,
-                                "image_alt" => $image_alt,
-                                "discipline" => $discipline,
-                                "free_option" => $free_option,
-                                "familiale_option" => $familiale_option,
-                                "data_date" => $data_date
-                            ));     
-                            ?>
-
-                            <?php endforeach; ?>
-
-                        </div>
-                    </div>
+            <p id="noEvent" class="programmation_evenements_alerte">Aucun événement à venir</p>
+            <div class="accueil_programmation_container">
+                <?php 
+                    $events = get_posts(array(
+                        'post_type' => 'new-evenement',
+                        'numberposts' => -1,
+                    ));
+                ?>
+                <?php foreach($events as $event):
+                    $titre = get_field('titre', $event->ID);
+                    $date = get_field('date', $event->ID);
+                    $jour = get_field('date_jour', $event->ID);
+                    $mois = get_field('date_mois', $event->ID);
+                    $jour_semaine = get_field('jour_semaine', $event->ID);
+                    $heure = get_field('heure', $event->ID);
+                    $lieu = get_field('lieu', $event->ID);
+                    $artiste = get_field('artiste', $event->ID);
+                    $desc = get_field('desc', $event->ID);
+                    $img = get_field('image', $event->ID);
+                    $alt = get_field('alt', $event->ID);
+                    $disciplines = get_field('disciplines', $event->ID);
+                    $gratuit = get_field('gratuit', $event->ID);
+                    $prix = get_field('prix', $event->ID);
+                    $familial = get_field('familial', $event->ID);
+                ?>
+                <?php get_template_part('template-part/carte_events_v2', null, array(
+                    'titre' => $titre,
+                    'date' => $date,
+                    'jour' => $jour,
+                    'mois' => $mois,
+                    'jour_semaine' => $jour_semaine,
+                    'heure' => $heure,
+                    'lieu' => $lieu,
+                    'artiste' => $artiste,
+                    'desc' => $desc,
+                    'img' => $img,
+                    'alt' => $alt,
+                    'disciplines' => $disciplines,
+                    'gratuit' => $gratuit,
+                    'prix' => $prix,
+                    'familial' => $familial
+                ));?>
+                <?php endforeach; ?>
             </div>
             <div class="accueil_programmation_links-container">
                 <a class="accueil_programmation_link--billeterie" href="https://lepointdevente.com/les-compagnons-de-la-mise-en-valeur-du-patrimoine-vivant-de-troi" aria-label="Acheter des billets"><img class="btn-ticket" src="<?php bloginfo('template_url'); ?>/images/billet_mockup.png" alt="Acheter des billets"</a>

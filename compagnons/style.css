@@ -34,4 +34,5 @@ Version: 1.0
 @import url(./css/_simpliquer.css);
 @import url(./css/_text-styles.css);
 @import url(./css/_variables.css);
-
+@import url(./css/_carte_v2.css);
+@import url(./css/_evenements.css);
