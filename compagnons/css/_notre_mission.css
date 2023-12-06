@@ -15,7 +15,7 @@
     margin-bottom: 60px;
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1200px){
     .text_intro{
         font-size: 24px;
     }

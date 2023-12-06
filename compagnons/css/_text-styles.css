@@ -11,7 +11,7 @@
 .main_nav_menu_link_btn_title{
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 450;
     text-transform: uppercase;
     color: white;
     width: fit-content;
@@ -35,14 +35,14 @@
 .submenu-link{
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
 }
 
 .submenu-items{
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 450;
     color: white;
 }
 
@@ -50,13 +50,13 @@
 
 .h1{
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 36px;
 }
 
 .h2{
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 28px;
 }
 
@@ -70,6 +70,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 24px;
+    margin: 0;
 }
 
 .h3-cursive{
@@ -82,6 +83,7 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 16px;
+    margin: 0;
 }
 
 .h4-underlined {
@@ -95,7 +97,7 @@
 
 .card-title{
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 20px;
 }
 
@@ -108,21 +110,21 @@
 
 .textblock-plus{
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 27.4px;
 }
 
 .textblock{
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     font-size: 16px;
     line-height: 23.5px;
 }
 
 .textblock_sous-titre{
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 18px;
     line-height: 23.5px;
     text-decoration: underline 2px solid black;
@@ -130,7 +132,7 @@
 
 .textblock-nomp {
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     font-size: 16px;
     line-height: 23.5px;
     padding: 0;
@@ -145,14 +147,14 @@
 
 .btn-default{
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 24px;
     transition: 300ms;
 }
 
 .btn-default:active{
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 20px;
     transition: 300ms;
 }
@@ -167,7 +169,7 @@
 }
 
 .link:hover, .link:focus {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 1200px){
@@ -176,7 +178,7 @@
     .top-nav-text{
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 600;
         text-transform: uppercase;
         color: white;
     }
@@ -212,14 +214,14 @@
     .submenu-link{
         font-family: "Montserrat", sans-serif;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 600;
         color: white;
     }
 
     .submenu-items{
         font-family: "Montserrat", sans-serif;
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 450;
         color: white;
     }
 
@@ -227,19 +229,19 @@
 
     .h1{
         font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 36px;
     }
     
     .h2{
         font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 32px;
     }
     
     .h2-cursive{
         font-family: "Homemade Apple", sans-serif;
-        font-size: 32px;
+        font-size: 28px;
         font-weight: normal;
     }
     
@@ -247,6 +249,7 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         font-size: 24px;
+        margin: 0;
     }
     
     .h3-cursive{
@@ -259,11 +262,12 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         font-size: 16px;
+        margin: 0;
     }
     
     .card-title{
         font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 20px;
     }
     
@@ -276,21 +280,21 @@
     
     .textblock-plus{
         font-family: "Montserrat", sans-serif;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 20px;
         line-height: 27.4px;
     }
     
     .textblock{
         font-family: "Montserrat", sans-serif;
-        font-weight: 400;
+        font-weight: 450;
         font-size: 16px;
         line-height: 23.5px;
     }
     
     .textblock_sous-titre{
         font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 18px;
         line-height: 23.5px;
         text-decoration: underline 2px solid black;
@@ -304,13 +308,13 @@
     
     .btn-default{
         font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 24px;
         transition: 300ms;
     }
     .btn-default:active{
         font-family: "Montserrat", sans-serif;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 20px;
         transition: 300ms;
     }

@@ -6,8 +6,8 @@
 
 .liens_filiere{
     position: relative;
-    margin: 100px 0px;
-    width: 90%;
+    margin: 0;
+    width: 100vw;
     display: none;
     flex-direction: column;
     align-items: center;
@@ -114,12 +114,14 @@
     font-family: "Montserrat", sans-serif;
     margin-bottom: 0;
     font-size: 18px;
+    font-weight: 450;
 }
 
 .after_title{
     font-family: "Montserrat", sans-serif;
     margin: 0;
     font-size: 16px;
+    font-weight: 450;
 }
 
 .filiere_title{
@@ -348,16 +350,38 @@
 }
 
 .accueil_programmation_link--programmation{
-    background-color: black;
+    text-decoration: none;
     width: fit-content;
     position: absolute;
     bottom: 0;
     right: 10px;
+    background-color: black;
+    padding: 10px 12px;
+    height: fit-content;
 }
 
-.accueil_programmation_link--programmation span{
-    color: white;
+.accueil_programmation_link--programmation_btn{
+    background-color: black;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height:fit-content;
+    width: fit-content;
 }
+
+.accueil_programmation_link--programmation_btn .texte{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.accueil_programmation_link--programmation_btn span{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
 
 /*SECTION VIDÉO*/
 
@@ -409,6 +433,9 @@
     color: white;
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .accueil_carrousel_container{
@@ -419,10 +446,12 @@
 @media screen  and (min-width: 600px){
     .prior_title{
         font-size: 20px;
+        font-weight: 450;
     }
     
     .after_title{
         font-size: 16px;
+        font-weight: 450;
     }
     
     .filiere_title{
@@ -454,52 +483,346 @@
 }
 
 @media screen  and (min-width: 1200px){
-    .accueil_section_video{
-        height: 500px;
+
+    .accueil_main{
+        background-color: white;
+        padding-top: 65px;
     }
 
-    .accueil_video_black_banner{
-        padding: 15px;
+    .accueil{
+        padding-top: 30px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: 700px 500px;
+        grid-template-rows: 970px 800px;
+    }
+
+    .accueil_programmation{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        display: block;
+        width: 700px;
+        height: 600px;
+        position: relative;
+    }
+
+    .accueil_programmation_titre{
         position: absolute;
-        top:-20px;
-        right: -20px;
-        z-index: 2;
-        transform: rotate(4deg);
-        text-align: right;
+        top: 20px;
+        left: 20px;
+    }
+
+    .accueil_programmation_container{
+        width: fit-content;
+        position: absolute;
+        top: 130px;
+        left: 40px;
+    }
+
+    .accueil_programmation_links-container{
+        width: 700px;
+        height: 142px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .accueil_programmation_link--billeterie{
+        position: absolute;
+        top:20px;
+        left:120px;
+    }
+
+    .btn-ticket:hover, .btn-ticket:focus{
+        animation: boucingEffect 900ms ease 0s 1 normal forwards;
+    }
+
+    .accueil_programmation_link--programmation{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        height: fit-content;
+        padding: 12px 16px;
+        height: 48px;
+        width: 215px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .accueil_programmation_link--programmation_btn:hover{
+        cursor: pointer;
+    }
+    
+    .accueil_programmation_link--programmation_btn::before{
+        content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+    }
+    
+    .accueil_programmation_link--programmation_btn:hover::before, .accueil_programmation_link--programmation_btn:focus::before{
+        cursor: pointer;
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+
+    .accueil_video{
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        display: block;
+        background-color: white;
+        width: 500px;
+        height: 950px;
+        position: relative;
+        padding: 0;
+    }
+
+    .accueil_video_banner{
+        width: fit-content;
+        height: fit-content;
+        padding: 16px;
+        position: absolute;
+        bottom: 290px;
+        right: 20px;
     }
 
     .accueil_video_container{
-        background-color: black;
+        width: 500px;
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+    }
+
+    .accueil_carrousel{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        width: 100vw;
+        justify-self: center;
+    }
+
+    .accueil_carrousel_titre{
+        font-family: "Homemade Apple", sans-serif;
+        font-size: 28px;
+        font-weight: normal;
+    }
+
+    .accueil_carrousel_container{
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    /*--------------CARTES DESKTOP ACCUEIL-----------------------*/
+
+    .accueil .carte{
+        min-width: 200px;
+        height: 300px;
+        position: relative;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        
+    }
+    
+    .accueil .carte_infos{
+        width: 200px;
+        height: 240px;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 5;
+        box-sizing: border-box;
+    }
+    
+    .carte_infos_date{
         width: fit-content;
         height: fit-content;
-        padding: 12px;
-        position: absolute;
-        top:40px;
-        right: 0px;
-        text-align: right;
-    }
-
-    .video_accueil{
-        max-width: 600px;
-    }
-
-    .derniere_edition_imgs{
+        background-color: black;
+        padding: 5px 10px;
+        z-index: 10;
         position: relative;
+        box-sizing: border-box;
     }
+    
+    .carte_infos_date p, .carte_infos_date span{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .accueil .carte_infos_date_jour-semaine{
+        font-size: 14px;
+    }
+    
+    .accueil .carte_infos_date_jour, .accueil .carte_infos_date_mois{
+        font-size: 16px;
+    }
+    
+    .accueil .carte_infos_hover{
+        background-color: rgba(0, 0, 0, 0.75);
+        position: relative;
+        padding: 70px 20px;
+        height: 240px;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        transition: 0.3s;
+        z-index: 5;
+        box-sizing: border-box;
+    }
+    
+    .accueil .carte_infos_hover_lieu, .accueil .carte_infos_hover_heure-prix{
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        transition: 0.3s;
+        margin: 0;
+    }
+    
+    .accueil .carte_infos_hover_desc{
+        display: none;
+    }
+    
+    .accueil .carte_infos_hover_link{
+        text-decoration: none;
+        padding: 6px;
+        margin: 0;
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: white;
+        transition: 0.3s;
+        box-sizing: border-box;
+    }
+    
+    .accueil .carte_infos_hover_link_button{
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        position: relative;
+        width: fit-content;
+        gap: 6px
+    }
+    
+    .accueil .carte_infos_hover_link_button span{
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .btn_texte{
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    .carte_infos_hover_link_button:hover{
+        cursor: pointer;
+    }
+    
+    .carte_infos_hover_link_button::before{
+        content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+    }
+    
+    .carte_infos_hover_link_button:hover::before, .carte_infos_hover_link_button:focus::before{
+        cursor: pointer;
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    
+    .carte:hover .carte_infos_hover{
+        display: block;
+    }
+    
+    .accueil .carte_infos_titres{
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    
+    .accueil .carte_infos_titres_titre{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 0;
+        padding: 6px;
+        box-sizing: border-box;
+    }
+    
+    .accueil .carte_infos_titres_artiste{
+        display: none;
+    }
+    
+    .accueil .carte_img-container{
+        width: 200px;
+        height: 240px;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    .accueil .carte_img-container img{
+        min-height: 240px;
+        min-width: 200px;
+        max-height: 300px;
+        max-width: 300px;
+        box-sizing: border-box;
+    }
+
 }
 
-
 @media screen  and (min-width: 1400px){
+    .accueil_main{
+        margin-top: 300px;
+        background-color: transparent;
+    }
+
     .liens_filiere{
         display: flex;
     }
 
     .prior_title{
         font-size: 22px;
+        font-weight: 450;
     }
     
     .after_title{
         font-size: 16px;
+        font-weight: 450;
     }
     
     .filiere_title{
@@ -510,138 +833,16 @@
         display: none;
     }
 
-    .accueil_video_black_banner{
-        width: 700px;
-        background-color: black;
-        color: white;
-        width: 480px;
-        padding: 15px;
-        position: absolute;
-        top:-20px;
-        right: -20px;
-        transform: rotate(4deg);
-        text-align: right;
+    .accueil{
+        background-color: white;
+        width: 1312px;
+        padding: 40px 56px 0px 56px;
+        box-sizing: border-box;
     }
 
-    .accueil_video_container>.accueil_video{
-        width: 50%;
-        align-self: flex-end;
+    .accueil_carrousel{
+        width: 1312px;
     }
-
-    .accueil_video_black_banner>h4{
-        font-size: 22px;
-    }
-    
-    .accueil_video_black_banner>p{
-        font-size: 18px;
-    }
-
-}
-
-/* WIDGET */
-
-.prog_widget {
-    background-color: white;
-    margin: auto;
-}
-
-.accueil_cardBox >.programmation_cardBox {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
-
-.prog_widget > .programmation {
-    padding-bottom: 10px;
-}
-
-.accueil_section_event {
-    display: flex;
-}
-
-.accueil_section_event_title {
-    color: white;
-    background-color: black;
-    width: fit-content;
-    padding: 0;
-    height: 48px;
-}
-
-.accueil_section_event_bottom {
-    display: flex;
-    justify-content: space-between;
-}
-
-.accueil_section_event_bottom_link {
-    font-style: none;
-    color: white;
-    background-color: black;
-    text-decoration: none;
-}
-
-.section_event_bottom_button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    background-color: white;
-    color: black;
-}
-
-.section_event_bottom_link_btn {
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.section_event_bottom_button:hover, .section_event_bottom_button:focus {
-    background-color: rgb(211, 211, 211);
-    cursor: pointer;
-    outline: none;
-}
-
-.section_event_bottom_link_btn_plus {
-    display: flex;
-    font-size: 16px!important;
-    align-items: center;
-    color: white;
-}
-
-.section_event_bottom_link_btn_plus > span {
-    display: flex;
-    align-items: center;
-}
-
-.section_event_bottom_link_btn_plus:hover, .section_event_bottom_link_btn_plus:focus {
-    font-size: 15px!important;
-    outline: none;
-    border: 1px solid white;
-}
-
-.section_event_bottom_link_btn_plus:active {
-    font-size: 14px!important;
-}
-
-@media screen  and (min-width: 544px) {
-    .accueil_section_event {
-        justify-content: center;
-    }
-    .accueil_section_event_bottom {
-        justify-content: center;
-    }
-}
-
-@media screen  and (max-width: 900px) {
-    .accueil_cardBox >.programmation_cardBox {
-        flex-wrap: nowrap;
-        width: 100vw;
-        overflow-x: auto;
-    }
-}
-
-@media screen  and (min-width: 900px) {
-    .prog_widget, .accueil_cardBox >.programmation_cardBox {
-        width: 800px; /* Largeur du widget */
-    }    
 }
 
 
