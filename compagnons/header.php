@@ -34,7 +34,7 @@
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/evenements_a_venir/"><span class="top-nav-text">Événements à venir</span></a></li>
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="https://lepointdevente.com/les-compagnons-de-la-mise-en-valeur-du-patrimoine-vivant-de-troi" target="_blank"><span class="top-nav-text">Acheter des billets</span></a></li>
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/contact/"><span class="top-nav-text">Contact</span></a></li>
-                    <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/accueil_compagnons"><span class="top-nav-text">À propos</span></a></li>
+                    <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/compagnons_accueil"><span class="top-nav-text">À propos</span></a></li>
                     <li class="top_nav_menu_item"><a class="top_nav_item_link" href="<?php bloginfo("template_url") ?>/faq/"><span class="top-nav-text">FAQ</span></a></li>       
                 </ul>
             </nav>
@@ -104,9 +104,6 @@
                                         <p class="main_nav_menu_link_btn_title2">GRANDES GUEULES</p>
                                     </div>
                                 </a>
-                                <span class="material-symbols-outlined">
-                                    expand_more
-                                </span>
                             </button>
                         </div>
                     </div>

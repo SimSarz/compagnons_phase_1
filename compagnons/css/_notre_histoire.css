@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 1200px){
     .notre_histoire_text h3{
         font-size: 24px;
     }
@@ -38,6 +38,7 @@
         position: relative;
         height: 450px;
         align-items: flex-start;
+        width: 100%;
     }
 
     .notre_histoire_last_p h3{
@@ -51,13 +52,12 @@
         font-size: 20px;
     }
 
-    
     .photo_lp_berube{
         width: 55%;
         margin-bottom: 0px;
         float: right;
         position: absolute;
-        right: -160px;
-        top: 0px;
+        right: -180px;
+        bottom: -120px;
     }
 }

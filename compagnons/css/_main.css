@@ -8,6 +8,10 @@ main{
     padding: 20px 20px;
 }
 
+a{
+    color: black;
+}
+
 @media screen and (min-width: 768px) {
     main{
         padding-top: 54px;

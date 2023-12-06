@@ -14,7 +14,7 @@
         </div>
     </div>
     <!-- Contenu du main -->
-    <div class="main_content main_equipe">
+    <div class="main_content main_projet">
             <div class="projets_en_cours">
                 <h2 class="h2">Projets en cours</h2>
                 <div class="projet_container">

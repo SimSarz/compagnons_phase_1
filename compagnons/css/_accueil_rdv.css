@@ -8,47 +8,21 @@
 /* --- bannière notre festival --- */
 
 .festival_banner p{
-    margin: 0;
+    margin: 0 20px;
     font-weight: 400;
 }
 
 .festival_banner h2{
-    margin: 0;
+    margin: 0 20px;
 }
 
 .main_banner{
     width: 100%;
 }
 
-/*---Vidéop---*/
-
 .video_section{
-    width: 100%;
+    display: none;
 }
-
-.video_element{
-    width: 100%;
-}
-
-.date-festival, .annonce-prog{
-    position: relative;
-    font-family: Montserrat, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    display: block;
-    z-index: 6;
-    margin: 0 20px;
-    padding: 12px 0;
-}
-
-.annonce-prog{
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-}
-
 
 /* --- Accueil content --- */
 
@@ -82,237 +56,30 @@
     line-height: 22px;
 }
 
-.accueil_icon_links_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.accueil_icon_links_section h3{
-    text-align: center;
-}
-
-.accueil_icon_links_section a{
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    margin: 10px;
-}
-
-.accueil_icon_links_section a:hover{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    margin: 0px;
-}
-
-.accueil_icon_links_section_programmation, 
-.accueil_icon_links_section_lieux, 
-.accueil_icon_links_section_artistes{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.section_billetterie{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section_billetterie h2{
-    margin-bottom: 5px;
-}
-
-.billetterie_banner{
-    background-color: black;
-    color: white;
-    padding: 15px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 70px;
-}
-
-
-.billetterie_banner>p>span{
-    font-weight: bold;
-}
-
-.billet_arrow{
-    display: none;
-}
-
-.benevole_section{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 70px;
-}
-
-.benevole_section h2{
-    font-size: 20px;
-    text-align: center;
-}
-
-.benevole_section h3{
-    font-size: 20px;
-}
-
-
-.benevole_section img{
-    display: none;
-}
-
-.benevole_section_banner{
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.benevole_section a:hover{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    margin: 0px;
-}
-
-.benevole_section_banner_green_content{
-    display: flex;
-    justify-content: center;
-}
-
-.benevole_section_banner_green_content h3{
-    background-color: var(--festival);
-    color: white;
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-}
-
-.menterie_container,
-.prix-jb_container,
-.bavarde_container,
-.responsable_container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.menterie_container h3,
-.prix-jb_container h3,
-.bavarde_container h3,
-.responsable_container h3{
-    margin: 0;
-    padding: 15px;
-}
-
-.menterie_container p,
-.prix-jb_container p,
-.bavarde_container p,
-.responsable_container p{
-    text-align: center;
-}
-
-.menterie_container_imgs,
-.prix-jb_container_imgs,
-.bavarde_container_imgs,
-.responsable_container_imgs{
-    display: none;
-}
-
-.menterie_container_text,
-.prix-jb_container_text,
-.bavarde_container_text,
-.responsable_container_text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*.menterie_container_text h3,
-.prix-jb_container_text h3,
-.bavarde_container_text h3,
-.responsable_container_text h3{
-    text-decoration: underline var(--festival) 2px;
-}*/
-
-
-.sub_section_link{
-    color: black;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 10px;
-    text-align: center;
-}
-
-.sub_section_link:hover{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    margin: 0px;
-    transition: background-color 0.2s, color 0.2s;
-}
-
-.sub_section_link:focus{
-    color: white;
-    background-color: black;
-    padding: 10px;
-    margin: 0px;
-    outline: none;
-}
-
 .derniere_edition_imgs{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin: 75px 0px;
-    width: 90%;
+    margin-top: 20px;
+    width: 100vw;
 }
 
-.derniere_edition_imgs>p,
-.derniere_edition_imgs>a{
+.derniere_edition_imgs>p{
     background-color: var(--festival);
     color: white;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 0;
-    width: 90%;
+    width: 100vw;
     text-align: center;
-    padding: 10px 0px;
+    padding: 16px 20px;
     font-weight: bold;
     text-decoration: none;
-}
-
-.derniere_edition_imgs>a:hover{
-    background-color: white;
-    color: black;
     box-sizing: border-box;
-    border: 2px solid black;
 }
-
-.derniere_edition_imgs>a:focus{
-    background-color: white;
-    color: black;
-    outline: none;
-    box-sizing: border-box;
-    border: 2px solid black;
-}
-
-
 
 .images_container{
-    width: 90%;
+    width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -320,88 +87,69 @@
     position: relative;
 }
 
-.images_container img{
-    width: 90%;
-}
+@media screen and (min-width: 768px) {
 
-
-
-
-
-
-@media screen and (min-width: 600px) {
-
-    .billetterie_banner p{
-        font-size: 22px;
-        line-height: 25px;
+    .video_section{
+        display: block;
+        width: 100vw;
+        position: relative;
+        z-index: 0;
+        margin-top: -60px;
+        margin-bottom: -100px;
+        clip-path: inset(10% 0 25% 0);
     }
 
-    .benevole_section_banner{
+    .video_element{
         width: 100%;
     }
 
-    .benevole_section_banner h2{
-        font-size: 28px;
-    }
-
-    .sub_section_h3{
-        font-size: 30px;
-        text-decoration: underline var(--festival) 2px;
-    }
-
-    .derniere_edition_imgs>p,
-    .derniere_edition_imgs>a{
-    padding: 20px 0px;
-    }
-
-    .les_meilleurs_moments,
-    .derniere_edition_imgs>a{
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-       .video_section{
-        width: 90%;
+    .video_banner{
         position: absolute;
-        top: 600px;
-        z-index: 5;
-        background-color: white;
-        clip-path: inset(10% 0 25% 0);
-
+        top: 100px;
+        left: 0;
+        z-index: 2;
     }
-    
-    .video_element{
-        width: 90%;
-        clip-path: inset(10% 0 25% 0);
-    } 
+
+    .date-festival, .annonce-prog{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+        background-color: var(--festival);
+        text-align: left;
+        padding: 12px;
+        padding-left: 20px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .annonce-prog{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+    }
 }
 
-
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
     .main{
         position: relative;
     }
 
     .main_content_rdv{
-        padding-top: 300px !important;
-        margin-top: 100px !important;
+        margin-top: 460px !important;
     }
 
     .video_section{
         width: 1200px;
-        position: absolute;
-        top: 600px;
-        z-index: 5;
+        position: relative;
+        z-index: 0;
         background-color: white;
-        clip-path: inset(10% 0 25% 0);
-
+        margin-top: 0px;
+        margin-bottom: -800px;
     }
     
     .video_element{
         width: 1201px;
-        clip-path: inset(10% 0 25% 0);
     }
 
     .introduction{
@@ -409,292 +157,38 @@
         line-height: 28px;
     }
 
+    .video_banner{
+        position: absolute;
+        top: 150px;
+    }
+
     .date-festival, .annonce-prog{
-        font-family: Montserrat, sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 36px;
         font-weight: 700;
         color: white;
         background-color: var(--festival);
         text-align: left;
-        padding: 12px;
-        display: inline;
-        position: absolute;
-        top: 300px;
+        padding-left: 20px;
+        display: block;
+        position: relative;
+        margin-top: 20px;
+        width: 650px;
     }
 
     .annonce-prog{
         font-size: 28px;
-        top: 400px;
     }
 
-    .accueil_icon_links_section{
-        flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        margin: 0 auto;
+    .derniere_edition_imgs{
+        width: 1200px;
     }
 
-    .accueil_icon_links_section>div{
-        width: 30%;
+    .derniere_edition_imgs p{
+        width: 1200px;
     }
 
-    .billetterie_banner{
-        width: 90%;
-        height: 170px;
-    }
-
-    .billetterie_banner p{
-        font-size: 26px;
-        line-height: 30px;
-    }
-
-    .billet_arrow{
-        display: block;
-        width: 40%;
-    }
-
-    .billet_mockup{
-        align-self: flex-end;
-        position: absolute;
-        top: 100px;
-        right: 60px;
-    }
-
-    .billetterie_banner>p{
-        margin-bottom: 5px;
-    }
-
-    .benevole_section h2, 
-    .benevole_section h3{
-        font-size: 28px;
-    }
-
-    .derniere_edition_imgs>a{
-        position: absolute;
-        bottom: -30px;
-        right: 20px;
-        width: 20%;
-    }
-
-}
-
-@media screen and (min-width: 1500px) {
-
-
-    .derniere_edition_imgs>p{
-        position: absolute;
-        top: -40px;
-        left: 90px;
-        transform: rotate(-3deg);
-        width: 30%;
-        z-index: 5;
-    }
-
-    .main_content_rdv {
-        max-width: 1200px;
-    }
-
-    .introduction{
-        margin-top: 100px;
-    }
-
-    .benevole_section{
-        align-items: center;
-        justify-content: space-between;
-        width: 90%;
-    }
-
-    .benevole_section h2{
-        font-size: 30px;
-        margin-bottom: 0;
-    }
-
-    .benevole_section img{
-        display: block;
-    }
-
-    .benevole_section_banner{
-        align-items: flex-start;
-    }
-
-    .benevole_section_banner{
-        width: 60%;
-    }
-
-    .benevole_section_banner_green_content{
-        width: 100%;
-        justify-content: flex-start;
-    }
-
-    .benevole_section_banner h3{
-        font-size: 34px;
-        width: 100%;
-        text-align: left;
-    }
-
-    .benevole_section_banner a{
-        align-self: flex-end;
-        margin-right: 80px;
-        font-size: 24px;
-    }
-
-    .benevole_section a:hover{
-        margin: 0px 80px 0px 0px;
-    }
-
-    .menterie_container_imgs,
-    .prix-jb_container_imgs,
-    .bavarde_container_imgs,
-    .responsable_container_imgs{
-        display: block;
-        position: relative;
-    }
-
-    .forgeron{
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-    }
-
-    .forgeron_hover{
-        transform: rotate(10deg) scale(1.2);
-        transition: 300ms;
-    }
-
-    .forgeron_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .spiral_hover{
-        transform: rotate(-70deg) scale(1.2);
-        transition: 300ms;
-    }
-
-    .spiral_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .h3_hover{
-        background-color: var(--festival);
-        color: white;
-        transition: 300ms;
-    }
-
-    .menterie_container_text,
-    .prix-jb_container_text,
-    .bavarde_container_text,
-    .responsable_container_text{
-        align-items: flex-start;
-    }
-
-
-    .menterie_container_text p,
-    .prix-jb_container_text p,
-    .bavarde_container_text p,
-    .responsable_container p{
-        text-align: left;
-    }
-
-    .sub_section_link{
-        align-self: center;
-        font-size: 24px;
-    }
-
-    .monsieur{
-        width: 230px;
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 55px;
-    }
-    
-    .spring_hover{
-        transform: rotate(-80deg)  scale(1.2);
-        transition: 300ms;
-    }
-
-    .spring_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .monsieur_hover{
-        transform: rotate(10deg) scale(1.2);
-        transition: 300ms;
-    }
-
-    .monsieur_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .bavarde_gris{
-        position: absolute;
-        z-index: 2;
-        top: 35px;
-        left: 45px;
-        width: 280px;
-    }
-
-    .bavarde_container_text{
-        padding-left: 35px;
-    }
-
-    .star_hover{
-        transform: rotate(-100deg)  scale(1.1);
-        transition: 300ms;
-    }
-
-    .star_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .bavarde_hover{
-        transform: rotate(20deg) scale(1.2);
-        transition: 300ms;
-    }
-
-    .bavarde_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .marins{
-        position: absolute;
-        z-index: 2;
-        top: -35px;
-        left: -25px;
-        width: 420px;
-    }
-
-    .inversed_spiral_hover{
-        transform: rotate(-140deg)  scale(1.1);
-        transition: 300ms;
-    }
-
-    .inversed_spiral_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .marins_hover{
-        transform: rotate(11deg) scale(1.2);
-        transition: 300ms;
-    }
-
-    .marins_out{
-        transform: rotate(0deg) scale(1);
-        transition: 300ms;
-    }
-
-    .responsable_container_text{
-        padding-right: 35px;
+    .images_container{
+        width: 1200px;
     }
 }
-
-
-

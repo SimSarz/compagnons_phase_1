@@ -1,4 +1,8 @@
 /*FILTRES*/
+.programmation{
+    padding: 0 20px 20px 20px !important;
+}
+
 .programmation_filters{
     width: 100%;
     height: 48px;
@@ -7,6 +11,7 @@
     transition: 0.3s;
     transform-origin: bottom; 
     overflow-y: hidden;
+    box-sizing: border-box;
 }
 
 .programmation_filters--open{
@@ -29,7 +34,7 @@
 .programmation_filters_container{ /*Container du contenu du dropdown*/
     position: absolute;
     top: 48px;
-    left: 0;
+    left: 20px;
 }
 
 /*CONTENU DU DROPDOWN*/
