@@ -431,7 +431,25 @@ body{
     background-color: none;
 }
 
+.footer_bottom {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
 
+.footer_bottom > .textblock > .link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 450;
+    color: white;
+    text-decoration: none;
+}
+
+.footer_bottom > .textblock {
+    margin: 0;
+}
+ 
 /* --- Media queries --- */
 
 

@@ -172,6 +172,14 @@
     font-weight: 600;
 }
 
+.main_politique {
+    display: block;
+}
+
+.main_politique > div > div > .textblock, .main_politique > div > div > .textblock-plus {
+    margin: 0;
+}
+
 @media screen and (min-width: 1200px){
 
     /*--STYLE DU HEADER - DESKTOP*/
