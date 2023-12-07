@@ -86,4 +86,7 @@
             </div>
         </div>
     </div>
+    <div class="footer_bottom">
+        <p class="textblock">@ 2023 Les Compagnons | <a class="link" href='<?php bloginfo("template_url") ?>/politique-de-confidentialite'>Politique de confidentialité</a> | Réalisé par Team Vanille</p>
+    </div>
 </footer>
